@@ -37,7 +37,7 @@ If you want to learn more about Generative AI features in Salesforce visit: http
     ```[{"status":"shipped","emailaddress":"mlexington@example.com","id":"1234"},{"status":"cancelled","emailaddress":"lbailey@example.com","id":"5512"},{"status":"created","emailaddress":"amiller@example.com","id":"5544"},{"status":"shipped","emailaddress":"psanders@example.com","id":"5555"},{"status":"shipped","emailaddress":"asahnd@example.com","id":"5589"}]```
 * Explore the collection to make sure it returns values, do this by opening a new browser and exploring: [https://[your endpoint]mockapi.io/api/v1/trackings/1234](https://66b60bc5b5ae2d11eb65b38e.mockapi.io/api/v1/trackings/1234)
 
-####**Step 4.  Authorize your tracking API**
+#### **Step 4.  Authorize your tracking API**
 
 * Go to setup → search for Remote site Settings
 * Click on new Remote site
@@ -247,7 +247,7 @@ Add one more Get records action to your flow:
 * Click on the Gear Icon **⚙️,** click on **Developer Console**
 * Click on **File - New - Apex Class**
 * Name your file AgentGetOrderDetails
-* Paste the code located at: <todo put route here>
+* Paste the code from the AgentGetOrderDetails.cls file located in this repository 
 * **Important!** Make sure you replace the end point of your mock api in the code
 * Click on **File - Save** and close the developer console
 
