@@ -1,0 +1,2598 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)../en_US/checkout?stage=customer#customer -->
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--[if gt IE 9]><!-->
+      <script type="text/javascript" async="" src="./Sites-NTOSFRA-Site_files/js"></script><script type="text/javascript" async="" src="./Sites-NTOSFRA-Site_files/js(1)"></script><script type="text/javascript" async="" src="./Sites-NTOSFRA-Site_files/analytics.js"></script><script type="text/javascript" async="" src="./Sites-NTOSFRA-Site_files/js(2)"></script><script async="" src="./Sites-NTOSFRA-Site_files/gtm.js"></script><script>//common/scripts.isml</script>
+      <!-- <script defer="" type="text/javascript" src="./Sites-NTOSFRA-Site_files/main.js"></script> -->
+    <script defer type="text/javascript" src="../static/js/main.js"></script>
+
+      <script defer="" type="text/javascript" src="./Sites-NTOSFRA-Site_files/checkout.js"></script>
+      <!--<![endif]-->
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>
+         Sites-NTOSFRA-Site
+      </title>
+      <meta name="description" content="Commerce Cloud Storefront Reference Architecture">
+      <meta name="keywords" content="Commerce Cloud Storefront Reference Architecture">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="apple-touch-icon" sizes="57x57" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw33d2fa8d/images/favicons/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw5b72ddbb/images/favicons/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw0199e550/images/favicons/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw87431bb4/images/favicons/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dwe951a446/images/favicons/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dwd903991c/images/favicons/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw9aad65a6/images/favicons/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw12309f23/images/favicons/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw64b5f768/images/favicons/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw21c1c7b1/images/favicons/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw10a6712d/images/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw16cffe27/images/favicons/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw34741883/images/favicons/favicon-16x16.png">
+      <link rel="stylesheet" href="../static/css/global.css">
+      <link rel="stylesheet" href="../static/css/checkout.css">
+      <script data-cfasync="false" type="text/javascript">
+         window.dataLayer = window.dataLayer || [];
+      </script>
+      
+      
+      <script type="text/javascript">//<!--
+         /* <![CDATA[ (head-active_data.js) */
+         var dw = (window.dw || {});
+         dw.ac = {
+             _analytics: null,
+             _events: [],
+             _category: "",
+             _searchData: "",
+             _anact: "",
+             _anact_nohit_tag: "",
+             _analytics_enabled: "true",
+             _timeZone: "US/Pacific",
+             _capture: function(configs) {
+                 if (Object.prototype.toString.call(configs) === "[object Array]") {
+                     configs.forEach(captureObject);
+                     return;
+                 }
+                 dw.ac._events.push(configs);
+             },
+         	capture: function() { 
+         		dw.ac._capture(arguments);
+         		// send to CQ as well:
+         		if (window.CQuotient) {
+         			window.CQuotient.trackEventsFromAC(arguments);
+         		}
+         	},
+             EV_PRD_SEARCHHIT: "searchhit",
+             EV_PRD_DETAIL: "detail",
+             EV_PRD_RECOMMENDATION: "recommendation",
+             EV_PRD_SETPRODUCT: "setproduct",
+             applyContext: function(context) {
+                 if (typeof context === "object" && context.hasOwnProperty("category")) {
+                 	dw.ac._category = context.category;
+                 }
+                 if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+                 	dw.ac._searchData = context.searchData;
+                 }
+             },
+             setDWAnalytics: function(analytics) {
+                 dw.ac._analytics = analytics;
+             },
+             eventsIsEmpty: function() {
+                 return 0 == dw.ac._events.length;
+             }
+         };
+         /* ]]> */
+         // -->
+      </script>
+      <script type="text/javascript">//<!--
+         /* <![CDATA[ (head-cquotient.js) */
+         var CQuotient = window.CQuotient = {};
+         CQuotient.clientId = 'bbms-NTO_NA';
+         CQuotient.realm = 'BDPX';
+         CQuotient.siteId = 'NTOSFRA';
+         CQuotient.instanceType = 'prd';
+         CQuotient.locale = 'en_US';
+         CQuotient.fbPixelId = '__UNKNOWN__';
+         CQuotient.activities = [];
+         CQuotient.cqcid='';
+         CQuotient.cquid='';
+         CQuotient.cqeid='';
+         CQuotient.cqlid='';
+         CQuotient.apiHost='api.cquotient.com';
+         /* Turn this on to test against Staging Einstein */
+         /* CQuotient.useTest= true; */
+         CQuotient.useTest = ('true' === 'false');
+         CQuotient.initFromCookies = function () {
+         	var ca = document.cookie.split(';');
+         	for(var i=0;i < ca.length;i++) {
+         	  var c = ca[i];
+         	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+         	  if (c.indexOf('cqcid=') == 0) {
+         		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+         	  } else if (c.indexOf('cquid=') == 0) {
+         		  var value = c.substring('cquid='.length,c.length);
+         		  if (value) {
+         		  	var split_value = value.split("|", 3);
+         		  	if (split_value.length > 0) {
+         			  CQuotient.cquid=split_value[0];
+         		  	}
+         		  	if (split_value.length > 1) {
+         			  CQuotient.cqeid=split_value[1];
+         		  	}
+         		  	if (split_value.length > 2) {
+         			  CQuotient.cqlid=split_value[2];
+         		  	}
+         		  }
+         	  }
+         	}
+         }
+         CQuotient.getCQCookieId = function () {
+         	if(window.CQuotient.cqcid == '')
+         		window.CQuotient.initFromCookies();
+         	return window.CQuotient.cqcid;
+         };
+         CQuotient.getCQUserId = function () {
+         	if(window.CQuotient.cquid == '')
+         		window.CQuotient.initFromCookies();
+         	return window.CQuotient.cquid;
+         };
+         CQuotient.getCQHashedEmail = function () {
+         	if(window.CQuotient.cqeid == '')
+         		window.CQuotient.initFromCookies();
+         	return window.CQuotient.cqeid;
+         };
+         CQuotient.getCQHashedLogin = function () {
+         	if(window.CQuotient.cqlid == '')
+         		window.CQuotient.initFromCookies();
+         	return window.CQuotient.cqlid;
+         };
+         CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+         try {
+         	if (Object.prototype.toString.call(events) === "[object Array]") {
+         		events.forEach(_trackASingleCQEvent);
+         	} else {
+         		CQuotient._trackASingleCQEvent(events);
+         	}
+         } catch(err) {}
+         };
+         CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+         	if (event && event.id) {
+         		if (event.type === dw.ac.EV_PRD_DETAIL) {
+         			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+         		} // not handling the other dw.ac.* events currently
+         	}
+         };
+         CQuotient.trackViewProduct = function(/* Object */ cqParamData){
+         	var cq_params = {};
+         	cq_params.cookieId = CQuotient.getCQCookieId();
+         	cq_params.userId = CQuotient.getCQUserId();
+         	cq_params.emailId = CQuotient.getCQHashedEmail();
+         	cq_params.loginId = CQuotient.getCQHashedLogin();
+         	cq_params.product = cqParamData.product;
+         	cq_params.realm = cqParamData.realm;
+         	cq_params.siteId = cqParamData.siteId;
+         	cq_params.instanceType = cqParamData.instanceType;
+         	cq_params.locale = CQuotient.locale;
+         	
+         	if(CQuotient.sendActivity) {
+         		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+         	} else {
+         		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+         	}
+         };
+         /* ]]> */
+         // -->
+      </script>
+      <link href="./Sites-NTOSFRA-Site_files/esw.min.css" type="text/css" rel="stylesheet">
+      <script src="chrome-extension://mhmpepeohaddbhkhecaldflljggicedf/pageContext.js" type="text/javascript"></script>
+      <style type="text/css" media="print">
+         @media print {
+         .no-print {
+         display: none !important;
+         }
+         }
+      </style>
+      <style id="inert-style">
+         [inert] {
+         pointer-events: none;
+         cursor: default;
+         }
+         [inert], [inert] * {
+         user-select: none;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         }
+      </style>
+   </head>
+   <body class="">
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQTZMLJ&gtm_auth=9sihTMeqoy04hfvwj4tXpA&gtm_preview=env-2&gtm_cookies_win=x"
+         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <div class="checkout" data-action="Checkout-Begin" data-querystring="">
+         <header class="site-header site-header_slim">
+            <section class="main-menu">
+               <nav class="navbar">
+                  <div class="d-flex align-items-center justify-content-between w-100 p-3">
+                     <a class="continue-shopping-link text-reset d-flex align-items-center" href="../en_US/homepage.html" title="Continue Shopping">
+                     <i class="far fa-chevron-left"></i>
+                     <span class="ml-2">Continue Shopping</span>
+                     </a>
+                     <div class="navbar-brand">
+                        <a href="../en_US/homepage.html" title="Commerce Cloud Storefront Reference Architecture Home">
+                        <img class="logo" src="./Sites-NTOSFRA-Site_files/logo.svg" alt="Commerce Cloud Storefront Reference Architecture">
+                        <img class="logo-alt" src="./Sites-NTOSFRA-Site_files/logo-alt.svg" alt="Commerce Cloud Storefront Reference Architecture">
+                        </a>
+                     </div>
+                     <div class="need-help d-none d-md-block">
+                        <span>Need Help? Call</span>
+                        <span>
+                        <a href="tel:1-800-555-0199">
+                        1-800-555-0199</a>
+                        </span>
+                     </div>
+                  </div>
+               </nav>
+            </section>
+         </header>
+         <section class="main-content" role="main">
+            <div class="alert alert-danger mx-3" role="alert">
+               Northern Trail Outfitters is not a real company. It is used for Salesforce demos. No orders will be processed.
+            </div>
+            <!-- Load Static Assets -->
+            <h1 class="page-title">
+               Checkout
+            </h1>
+            <div id="checkout-main" class="container data-checkout-stage " data-customer-type="guest" data-checkout-stage="customer" data-checkout-get-url="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutServices-Get">
+               <!-- Help and Phone -->
+               <div class="row hidden-xs-down">
+                  <div class="col-12 col-sm-5 offset-sm-7 col-md-5 offset-md-7">
+                     <div class="text-center">
+                        <span>Need Help? Call</span>
+                        <span><a href="tel:1-800-555-0199">1-800-555-0199</a></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="row d-sm-none">
+                  <div class="col-12">
+                     <span class="grand-total-label">1</span>
+                     <span class="grand-total-price">$149.00</span>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-7">
+                     <!-- Checkout Forms: Shipping, Payment, Coupons, Billing, etc -->
+                     <div class="alert alert-danger error-message" role="alert">
+                        <p class="error-message-text"></p>
+                     </div>
+                     <!-- Step 1: Customer -->
+                     <div class="card ghost customer">
+                        <div class="card-header">
+                           <h2 class="card-header-custom">Customer</h2>
+                        </div>
+                     </div>
+                     <div class="card customer-section">
+                        <div class="card-header">
+                           <h2 class="card-header-custom">Customer</h2>
+                        </div>
+                        <div class="customer-error"></div>
+                        <div class="card-body">
+                           <form autocomplete="on" id="guest-customer" class="guest-form" method="POST" action="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutServices-SubmitCustomer" name="dwfrm_coCustomer" novalidate="">
+                              <fieldset class="customer-information-block">
+                                 <div class="row">
+                                    <div class="col-sm-12">
+                                       <div class="form-group">
+                                          <label class="form-control-label">
+                                          Email
+                                          </label>
+                                          <input type="text" class="form-control email" id="email-guest" value="" name="dwfrm_coCustomer_email" required="" aria-required="true" maxlength="50" pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$" aria-describedby="guestEmailInvalidMessage">
+                                          <div class="invalid-feedback" id="guestEmailInvalidMessage"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="btn btn-primary btn-block submit-customer" type="submit" name="submit" value="submit-customer">
+                                 Continue as guest
+                                 </button>
+                                 <strong>Already have an account? <button type="button" class="btn btn-link js-login-customer">Sign in</button></strong>
+                              </fieldset>
+                              <input type="hidden" name="csrf_token" value="CQZTTaSkACQFISBluzApmIe5f4aBgtlS22YClwp6NsNOXOywrgPJ3otSHhBWlFh4awV7jr7YKxJaEevBENQZbuds70Lmzz5Rvv-tHNT71L3mKzlbMEg7oWzSiM97L90hE9IXYWQ0rZRjOo0QqrkYGrNLIY4h2Hr8w71LqBtvdPeZ7leWdP4=">
+                           </form>
+                           <form autocomplete="on" id="registered-customer" method="POST" class="registered-form d-none" action="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutServices-LoginCustomer" name="dwfrm_coRegisteredCustomer" novalidate="">
+                              <fieldset class="customer-information-block">
+                                 <div class="row">
+                                    <div class="col-sm-12">
+                                       <div class="form-group">
+                                          <label class="form-control-label">
+                                          Email
+                                          </label>
+                                          <input type="text" class="form-control email" id="email" value="" name="dwfrm_coRegisteredCustomer_email" required="" aria-required="true" maxlength="50" pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$" aria-describedby="emailInvalidMessage">
+                                          <div class="invalid-feedback" id="emailInvalidMessage"></div>
+                                       </div>
+                                       <div class="form-group password-form">
+                                          <label class="form-control-label">
+                                          Password
+                                          </label>
+                                          <input type="password" class="form-control password" id="password" name="dwfrm_coRegisteredCustomer_password" required="" aria-required="true" value="" maxlength="255" minlength="8" aria-describedby="passwordInvalidMessage">
+                                          <div class="invalid-feedback" id="passwordInvalidMessage"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-12">
+                                       <div class="mb-sm-3">
+                                          <button class="btn btn-primary btn-block submit-customer-login" type="submit" name="submit" value="submit-login">
+                                          Login
+                                          </button>
+                                          <button class="btn btn-light btn-block js-cancel-login" name="submit" value="cancel-login">
+                                          Cancel
+                                          </button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </fieldset>
+                              <input type="hidden" name="csrf_token" value="CQZTTaSkACQFISBluzApmIe5f4aBgtlS22YClwp6NsNOXOywrgPJ3otSHhBWlFh4awV7jr7YKxJaEevBENQZbuds70Lmzz5Rvv-tHNT71L3mKzlbMEg7oWzSiM97L90hE9IXYWQ0rZRjOo0QqrkYGrNLIY4h2Hr8w71LqBtvdPeZ7leWdP4=">
+                           </form>
+                        </div>
+                        <div class="card-body">
+                           <div class="modal fade" id="request-passwordless-login-modal" tabindex="-1" role="dialog" aria-labelledby="requestPasswordlessLoginModal">
+                              <div class="modal-dialog" role="document">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h2 class="modal-title request-passwordless-login-title">Sign in with Single-Use Code</h2>
+                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <form class="passwordless-form" action="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/PasswordlessLogin-Auth?reentryEndpoint=2" method="POST" name="passwordless-login-form" id="passwordless-login-form">
+                                          <div class="request-passwordless-login-body">
+                                             <p>
+                                                Enter the email address associated with your account, and we'll send a single-use login code to your inbox.
+                                             </p>
+                                             <div class="form-group required">
+                                                <label class="form-control-label" for="passwordless-email">
+                                                Email
+                                                </label>
+                                                <input id="passwordless-email" type="email" class="form-control" name="loginEmail" aria-describedby="emailHelp" placeholder="Email">
+                                                <div class="invalid-feedback"></div>
+                                             </div>
+                                          </div>
+                                          <div class="send-passwordless-email-btn">
+                                             <button type="submit" id="submitPasswordlessButton" class="btn btn-primary btn-block">
+                                             Send
+                                             </button>
+                                          </div>
+                                          <input type="hidden" name="csrf_token" value="CQZTTaSkACQFISBluzApmIe5f4aBgtlS22YClwp6NsNOXOywrgPJ3otSHhBWlFh4awV7jr7YKxJaEevBENQZbuds70Lmzz5Rvv-tHNT71L3mKzlbMEg7oWzSiM97L90hE9IXYWQ0rZRjOo0QqrkYGrNLIY4h2Hr8w71LqBtvdPeZ7leWdP4=">
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <a href="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/PasswordlessLogin-Auth?reentryEndpoint=2" data-toggle="modal" data-target="#request-passwordless-login-modal" id="passwordless-login-modal" class="btn btn-block btn-dark btn-passwordless" role="button" aria-pressed="true">
+                              Sign in with Single-Use Code
+                              </a>
+                           </div>
+                           <form action="../en_US/checkout?stage=customer" class="login-oauth" method="post" name="login-oauth-form">
+                              <div class="form-group">
+                                 <a href="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/Login-OAuthLogin?oauthProvider=Salesforce&amp;oauthLoginTargetEndPoint=2" class="btn btn-block btn-primary btn-oauth oauth-salesforce" role="button" aria-pressed="true">
+                                 <img src="./Sites-NTOSFRA-Site_files/salesforce.svg" class="oauth-icon" alt="Salesforce">
+                                 Sign in with the NTO Community
+                                 </a>
+                              </div>
+                              <div class="form-group">
+                                 <a href="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/Login-OAuthLogin?oauthProvider=Google&amp;oauthLoginTargetEndPoint=2" class="btn btn-block btn-primary btn-oauth oauth-google" role="button" aria-pressed="true">
+                                 <img src="./Sites-NTOSFRA-Site_files/google.svg" class="oauth-icon" alt="Google">
+                                 Sign in with Google
+                                 </a>
+                              </div>
+                              <div class="form-group">
+                                 <a href="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/Login-OAuthLogin?oauthProvider=Facebook&amp;oauthLoginTargetEndPoint=2" class="btn btn-block btn-primary btn-oauth oauth-facebook" role="button" aria-pressed="true">
+                                 <img src="./Sites-NTOSFRA-Site_files/facebook.svg" class="oauth-icon" alt="Facebook">
+                                 Sign in with Facebook
+                                 </a>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="card customer-summary">
+                        <div class="card-header clearfix">
+                           <h2 class="pull-left card-header-custom">Customer</h2>
+                           <button class="edit-button pull-right" aria-label="action.edit.step.msg.customer">Edit</button>
+                        </div>
+                        <div class="card-body">
+                           <span class="summary-section-label customer-label">
+                           Customer Information:
+                           </span>
+                           <br>
+                           <div class="summary-details customer">
+                              <span class="customer-summary-email">null</span>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Step 2: Shipping -->
+                     <div class="card ghost shipping">
+                        <div class="card-header">
+                           <h2 class="card-header-custom">Shipping</h2>
+                        </div>
+                     </div>
+                     <div class="card shipping-section">
+                        <div class="single-shipping">
+                           <div data-shipment-uuid="aea38679c32a44bc877ac52402">
+                              <div class="card-header">
+                                 <h2 class="card-header-custom">Shipping</h2>
+                              </div>
+                              <div class="shipping-error"></div>
+                              <div class="card-body shipping-content">
+                                 <form class="shipping-form" autocomplete="on" novalidate="" action="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutShippingServices-SubmitShipping" data-address-mode="new" name="dwfrm_shipping" id="dwfrm_shipping">
+                                    <input name="originalShipmentUUID" type="hidden" value="aea38679c32a44bc877ac52402">
+                                    <input name="shipmentUUID" type="hidden" value="aea38679c32a44bc877ac52402">
+                                    <div class="shipping-address ">
+                                       <fieldset class="shipping-method-block">
+                                          <h3>Shipping Method</h3>
+                                          <div class="form-group">
+                                             <input name="shipmentUUID" type="hidden" value="aea38679c32a44bc877ac52402">
+                                             <select class="form-control shipping-method-list" data-select-shipping-method-url="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutShippingServices-SelectShippingMethod" data-action-url="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutShippingServices-UpdateShippingMethodsList" name="dwfrm_shipping_shippingAddress_shippingMethodID">
+                                                <option value="001" data-pickup="false" selected="">
+                                                   Ground
+                                                   $7.99
+                                                </option>
+                                                <option value="002" data-pickup="false">
+                                                   2-Day Express
+                                                   $11.99
+                                                </option>
+                                                <option value="003" data-pickup="false">
+                                                   Overnight
+                                                   $19.99
+                                                </option>
+                                                <option value="004" data-pickup="false">
+                                                   Super Saver
+                                                   $1.99
+                                                </option>
+                                                <option value="012" data-pickup="false">
+                                                   Express
+                                                   $22.99
+                                                </option>
+                                                <option value="021" data-pickup="false">
+                                                   USPS
+                                                   $7.99
+                                                </option>
+                                                <option value="005" data-pickup="true">
+                                                   Store Pickup
+                                                   $0.00
+                                                </option>
+                                             </select>
+                                          </div>
+                                          <!-- Template used by client to redraw shipping methods                           -->
+                                          <div id="shipping-method-template" style="display:none;">
+                                             <option value="" data-pickup="">
+                                                <span class="display-name"></span>
+                                                <span class="text-muted arrival-time" style="display:none"></span>
+                                                <span class="shipping-cost"></span>
+                                             </option>
+                                          </div>
+                                       </fieldset>
+                                       <fieldset class="shipment-selector-block d-none ">
+                                          <div class="form-group">
+                                             <label class="form-control-label" for="shipmentSelector">
+                                             Shipping To
+                                             </label>
+                                             <select name="shipmentSelector" class="addressSelector form-control custom-select" data-create-shipment-url="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutAddressServices-CreateNewAddress">
+                                                <option value="new" data-first-name="" data-last-name="" data-address1="" data-address2="" data-city="" data-state-code="" data-country-code="" data-postal-code="" data-phone="">
+                                                   New Address
+                                                </option>
+                                             </select>
+                                             <div class="invalid-feedback"></div>
+                                             <div class="row justify-content-around mt-3">
+                                                <button type="button" class="btn btn-link btn-show-details">
+                                                <i class="fas fa-edit"></i>
+                                                Update Address
+                                                </button>
+                                                <button type="button" class="btn btn-link btn-add-new">
+                                                <i class="fas fa-plus"></i>
+                                                Add new address
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </fieldset>
+                                       <fieldset class="pickup-in-store" data-url="/on/demandware.store/Sites-NTOSFRA-Site/en_US/Stores-InventorySearch?showMap=false&amp;products=2010517APNAEE%3a1&amp;isForm=false">
+                                       </fieldset>
+                                       <button class="btn btn-block btn-outline-primary btn-margin change-store d-none" name="changeStore" value="changeStore">
+                                       Change Store
+                                       </button>
+                                       <fieldset class="shipping-address-block ">
+                                          <div class="row">
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_firstName">
+                                                   <label class="form-control-label" for="shippingFirstNamedefault">
+                                                   First Name
+                                                   </label>
+                                                   <input autofocus="" type="text" class="form-control shippingFirstName" id="shippingFirstNamedefault" aria-describedby="defaultFirstName" value="" name="dwfrm_shipping_shippingAddress_addressFields_firstName" required="" aria-required="true" maxlength="50" autocomplete="shipping given-name">
+                                                   <div class="invalid-feedback" id="defaultFirstName"></div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_lastName">
+                                                   <label class="form-control-label" for="shippingLastNamedefault">
+                                                   Last Name
+                                                   </label>
+                                                   <input type="text" class="form-control shippingLastName" id="shippingLastNamedefault" aria-describedby="defaultLastName" value="" name="dwfrm_shipping_shippingAddress_addressFields_lastName" required="" aria-required="true" maxlength="50" autocomplete="shipping family-name">
+                                                   <div class="invalid-feedback" id="defaultLastName"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-sm-12">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_address1">
+                                                   <label class="form-control-label" for="shippingAddressOnedefault">
+                                                   Address 1
+                                                   </label>
+                                                   <input type="text" class="form-control shippingAddressOne" id="shippingAddressOnedefault" aria-describedby="defaultAddressLine1" value="" name="dwfrm_shipping_shippingAddress_addressFields_address1" required="" aria-required="true" maxlength="50" autocomplete="shipping address-line1">
+                                                   <div class="invalid-feedback" id="defaultAddressLine1"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-sm-12">
+                                                <div class="form-group
+                                                   dwfrm_shipping_shippingAddress_addressFields_address2">
+                                                   <label class="form-control-label" for="shippingAddressTwodefault">
+                                                   Address 2
+                                                   </label>
+                                                   <input type="text" class="form-control shippingAddressTwo" id="shippingAddressTwodefault" aria-describedby="defaultAddressLine2" value="" name="dwfrm_shipping_shippingAddress_addressFields_address2" maxlength="50" autocomplete="shipping address-line2">
+                                                   <div class="invalid-feedback" id="defaultAddressLine2"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_country">
+                                                   <label class="form-control-label" for="shippingCountrydefault">
+                                                   Country
+                                                   </label>
+                                                   <select class="form-control shippingCountry custom-select" id="shippingCountrydefault" name="dwfrm_shipping_shippingAddress_addressFields_country" required="" aria-required="true" autocomplete="shipping country" aria-describedby="defaultCountry">
+                                                      <option label=" "></option>
+                                                      <option id="US" value="US">United States</option>
+                                                   </select>
+                                                   <div class="invalid-feedback" id="defaultCountry"></div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_states_stateCode">
+                                                   <label class="form-control-label" for="shippingStatedefault">
+                                                   State
+                                                   </label>
+                                                   <select class="form-control shippingState custom-select" id="shippingStatedefault" name="dwfrm_shipping_shippingAddress_addressFields_states_stateCode" required="" aria-required="true" autocomplete="shipping address-level1" aria-describedby="defaultState">
+                                                      <option id="" value=""> </option>
+                                                      <option id="AL" value="AL">Alabama</option>
+                                                      <option id="AK" value="AK">Alaska</option>
+                                                      <option id="AS" value="AS">American Samoa</option>
+                                                      <option id="AZ" value="AZ">Arizona</option>
+                                                      <option id="AR" value="AR">Arkansas</option>
+                                                      <option id="CA" value="CA">California</option>
+                                                      <option id="CO" value="CO">Colorado</option>
+                                                      <option id="CT" value="CT">Connecticut</option>
+                                                      <option id="DE" value="DE">Delaware</option>
+                                                      <option id="DC" value="DC">District of Columbia</option>
+                                                      <option id="FL" value="FL">Florida</option>
+                                                      <option id="GA" value="GA">Georgia</option>
+                                                      <option id="GU" value="GU">Guam</option>
+                                                      <option id="HI" value="HI">Hawaii</option>
+                                                      <option id="ID" value="ID">Idaho</option>
+                                                      <option id="IL" value="IL">Illinois</option>
+                                                      <option id="IN" value="IN">Indiana</option>
+                                                      <option id="IA" value="IA">Iowa</option>
+                                                      <option id="KS" value="KS">Kansas</option>
+                                                      <option id="KY" value="KY">Kentucky</option>
+                                                      <option id="LA" value="LA">Louisiana</option>
+                                                      <option id="ME" value="ME">Maine</option>
+                                                      <option id="MD" value="MD">Maryland</option>
+                                                      <option id="MA" value="MA">Massachusetts</option>
+                                                      <option id="MI" value="MI">Michigan</option>
+                                                      <option id="MN" value="MN">Minnesota</option>
+                                                      <option id="MS" value="MS">Mississippi</option>
+                                                      <option id="MO" value="MO">Missouri</option>
+                                                      <option id="MT" value="MT">Montana</option>
+                                                      <option id="NE" value="NE">Nebraska</option>
+                                                      <option id="NV" value="NV">Nevada</option>
+                                                      <option id="NH" value="NH">New Hampshire</option>
+                                                      <option id="NJ" value="NJ">New Jersey</option>
+                                                      <option id="NM" value="NM">New Mexico</option>
+                                                      <option id="NY" value="NY">New York</option>
+                                                      <option id="NC" value="NC">North Carolina</option>
+                                                      <option id="ND" value="ND">North Dakota</option>
+                                                      <option id="OH" value="OH">Ohio</option>
+                                                      <option id="OK" value="OK">Oklahoma</option>
+                                                      <option id="OR" value="OR">Oregon</option>
+                                                      <option id="PA" value="PA">Pennsylvania</option>
+                                                      <option id="PR" value="PR">Puerto Rico</option>
+                                                      <option id="RI" value="RI">Rhode Island</option>
+                                                      <option id="SC" value="SC">South Carolina</option>
+                                                      <option id="SD" value="SD">South Dakota</option>
+                                                      <option id="TN" value="TN">Tennessee</option>
+                                                      <option id="TX" value="TX">Texas</option>
+                                                      <option id="UT" value="UT">Utah</option>
+                                                      <option id="VT" value="VT">Vermont</option>
+                                                      <option id="VI" value="VI">Virgin Islands</option>
+                                                      <option id="VA" value="VA">Virginia</option>
+                                                      <option id="WA" value="WA">Washington</option>
+                                                      <option id="WV" value="WV">West Virginia</option>
+                                                      <option id="WI" value="WI">Wisconsin</option>
+                                                      <option id="WY" value="WY">Wyoming</option>
+                                                      <option id="AE" value="AE">Armed Forces Africa</option>
+                                                      <option id="AA" value="AA">Armed Forces America (exc. Canada)</option>
+                                                      <option id="AE" value="AE">Armed Forces Canada</option>
+                                                      <option id="AE" value="AE">Armed Forces Europe</option>
+                                                      <option id="AE" value="AE">Armed Forces Middle East</option>
+                                                      <option id="AP" value="AP">Armed Forces Pacific</option>
+                                                      <option id="OTHER" value="OTHER">Non-US/Other</option>
+                                                   </select>
+                                                   <div class="invalid-feedback" id="defaultState"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_city">
+                                                   <label class="form-control-label" for="shippingAddressCitydefault">
+                                                   City
+                                                   </label>
+                                                   <input type="text" class="form-control shippingAddressCity" id="shippingAddressCitydefault" aria-describedby="defaultCity" value="" name="dwfrm_shipping_shippingAddress_addressFields_city" required="" aria-required="true" maxlength="50" minlength="2" autocomplete="shipping address-level2">
+                                                   <div class="invalid-feedback" id="defaultCity"></div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_postalCode">
+                                                   <label class="form-control-label" for="shippingZipCodedefault">
+                                                   ZIP Code
+                                                   </label>
+                                                   <input type="text" class="form-control shippingZipCode" id="shippingZipCodedefault" aria-describedby="defaultZipCode" value="" name="dwfrm_shipping_shippingAddress_addressFields_postalCode" required="" aria-required="true" maxlength="10" minlength="5" pattern="(^\d{5}(-\d{4})?$)|(^[abceghjklmnprstvxyABCEGHJKLMNPRSTVXY]{1}\d{1}[A-Za-z]{1} *\d{1}[A-Za-z]{1}\d{1}$)" autocomplete="shipping postal-code">
+                                                   <div class="invalid-feedback" id="defaultZipCode"></div>
+                                                   <span>Example: 12345</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-sm-12">
+                                                <div class="form-group
+                                                   dwfrm_shipping_shippingAddress_addressFields_phone">
+                                                   <label class="form-control-label" for="shippingPhoneNumberdefault">
+                                                   Phone Number
+                                                   </label>
+                                                   <input type="tel" class="form-control shippingPhoneNumber" id="shippingPhoneNumberdefault" aria-describedby="defaultTelephoneNumber" value="" name="dwfrm_shipping_shippingAddress_addressFields_phone" maxlength="20" minlength="10" autocomplete="shipping tel">
+                                                   <div class="invalid-feedback" id="defaultTelephoneNumber"></div>
+                                                   <span>Example: 9234567890</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </fieldset>
+                                       <fieldset class="gift-message-block ">
+                                          <div class="row">
+                                             <div class="col-12">
+                                                <div class="form-group">
+                                                   <div class="custom-control custom-checkbox">
+                                                      <input class="custom-control-input gift" type="checkbox" id="isGift-default-aea38679c32a44bc877ac52402" name="dwfrm_shipping_shippingAddress_isGift" value="true">
+                                                      <label for="isGift-default-aea38679c32a44bc877ac52402" class="custom-control-label checkout-checkbox">
+                                                      This is a Gift
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row gift-message d-none">
+                                             <div class="col-12">
+                                                <div class="form-group">
+                                                   <label for="giftMessage">Message</label>
+                                                   <textarea class="form-control gift-message-aea38679c32a44bc877ac52402" id="giftMessage" rows="3" name="dwfrm_shipping_shippingAddress_giftMessage" value="" maxlength="250"></textarea>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </fieldset>
+                                    </div>
+                                    <div class="view-address-block d-none">
+                                       <h3>Shipping Method
+                                          <span>
+                                          </span>
+                                       </h3>
+                                       <div class="row leading-lines">
+                                          <p class="col-8 start-lines">
+                                             <span class="display-name">Ground</span>
+                                          </p>
+                                          <p class="col-4 end-lines text-right">
+                                             <span class="price">
+                                             $7.99
+                                             </span>
+                                          </p>
+                                       </div>
+                                       <div class="summary-details gift-summary d-none">
+                                          <p class="summary-section-label">Gift Message:</p>
+                                          <div class="gift-message-summary">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="multi-ship-action-buttons">
+                                       <button class="btn btn-outline-primary col-12 btn-enter-multi-ship " data-action="enter">
+                                       Enter Address
+                                       </button>
+                                       <div class="row multi-ship-address-actions d-none">
+                                          <button class="btn btn-outline-primary offset-1 col-5 btn-cancel-multi-ship-address" data-action="cancel">
+                                          Cancel
+                                          </button>
+                                          <button class="btn btn-outline-primary col-5 btn-save-multi-ship" data-action="save">
+                                          Save
+                                          </button>
+                                       </div>
+                                       <button class="btn btn-outline-primary col-12 btn-save-multi-ship save-shipment d-none" data-action="save">
+                                       Save
+                                       </button>
+                                       <button class="btn btn-outline-primary btn-edit-multi-ship col-12 d-none" data-action="edit">
+                                       Edit
+                                       </button>
+                                    </div>
+                                    <input type="hidden" name="csrf_token" value="CQZTTaSkACQFISBluzApmIe5f4aBgtlS22YClwp6NsNOXOywrgPJ3otSHhBWlFh4awV7jr7YKxJaEevBENQZbuds70Lmzz5Rvv-tHNT71L3mKzlbMEg7oWzSiM97L90hE9IXYWQ0rZRjOo0QqrkYGrNLIY4h2Hr8w71LqBtvdPeZ7leWdP4=">
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="multi-shipping">
+                           <div class="card" data-shipment-uuid="aea38679c32a44bc877ac52402">
+                              <div class="card-header">
+                                 <div class="product-line-item ">
+                                    <div class="line-item-header">
+                                       <div class="line-item-name">
+                                          <span>Women’s Pill Vest</span>
+                                       </div>
+                                    </div>
+                                    <div class="product-line-item-details d-flex flex-row">
+                                       <div class="item-image">
+                                          <img class="product-image" src="./Sites-NTOSFRA-Site_files/2010517APN-0.jpg" alt="Women’s Pill Vest" title="Women’s Pill Vest">
+                                       </div>
+                                       <div class="item-attributes">
+                                          <p class="line-item-attributes">Color: Everglade</p>
+                                          <p class="line-item-attributes">Size: S</p>
+                                          <div class="item-options">
+                                          </div>
+                                          <div class="gift-registry-item-tag d-none">
+                                             <p class="line-item-attributes"></p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card-body shipping-content">
+                                 <form class="shipping-form" autocomplete="on" novalidate="" action="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutAddressServices-AddNewAddress" data-address-mode="new" name="dwfrm_shipping" id="dwfrm_shipping">
+                                    <input name="productLineItemUUID" type="hidden" value="b67d6d287f8d8870dc5360a780">
+                                    <input name="originalShipmentUUID" type="hidden" value="aea38679c32a44bc877ac52402">
+                                    <input name="shipmentUUID" type="hidden" value="aea38679c32a44bc877ac52402">
+                                    <div class="shipping-address ">
+                                       <fieldset class="shipping-method-block">
+                                          <h3>Shipping Method</h3>
+                                          <div class="form-group">
+                                             <input name="shipmentUUID" type="hidden" value="aea38679c32a44bc877ac52402">
+                                             <select class="form-control shipping-method-list" data-select-shipping-method-url="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutShippingServices-SelectShippingMethod" data-action-url="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutShippingServices-UpdateShippingMethodsList" name="dwfrm_shipping_shippingAddress_shippingMethodID">
+                                                <option value="001" data-pickup="false" selected="">
+                                                   Ground
+                                                   $7.99
+                                                </option>
+                                                <option value="002" data-pickup="false">
+                                                   2-Day Express
+                                                   $11.99
+                                                </option>
+                                                <option value="003" data-pickup="false">
+                                                   Overnight
+                                                   $19.99
+                                                </option>
+                                                <option value="004" data-pickup="false">
+                                                   Super Saver
+                                                   $1.99
+                                                </option>
+                                                <option value="012" data-pickup="false">
+                                                   Express
+                                                   $22.99
+                                                </option>
+                                                <option value="021" data-pickup="false">
+                                                   USPS
+                                                   $7.99
+                                                </option>
+                                                <option value="005" data-pickup="true">
+                                                   Store Pickup
+                                                   $0.00
+                                                </option>
+                                             </select>
+                                          </div>
+                                          <!-- Template used by client to redraw shipping methods                           -->
+                                          <div id="shipping-method-template" style="display:none;">
+                                             <option value="" data-pickup="">
+                                                <span class="display-name"></span>
+                                                <span class="text-muted arrival-time" style="display:none"></span>
+                                                <span class="shipping-cost"></span>
+                                             </option>
+                                          </div>
+                                       </fieldset>
+                                       <fieldset class="shipment-selector-block  ">
+                                          <div class="form-group">
+                                             <label class="form-control-label" for="shipmentSelector">
+                                             Shipping To
+                                             </label>
+                                             <select name="shipmentSelector" class="addressSelector form-control custom-select" data-create-shipment-url="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutAddressServices-CreateNewAddress">
+                                                <option value="new" data-first-name="" data-last-name="" data-address1="" data-address2="" data-city="" data-state-code="" data-country-code="" data-postal-code="" data-phone="">
+                                                   New Address
+                                                </option>
+                                             </select>
+                                             <div class="invalid-feedback"></div>
+                                             <div class="row justify-content-around mt-3">
+                                                <button type="button" class="btn btn-link btn-show-details">
+                                                <i class="fas fa-edit"></i>
+                                                Update Address
+                                                </button>
+                                                <button type="button" class="btn btn-link btn-add-new">
+                                                <i class="fas fa-plus"></i>
+                                                Add new address
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </fieldset>
+                                       <fieldset class="pickup-in-store" data-url="/on/demandware.store/Sites-NTOSFRA-Site/en_US/Stores-InventorySearch?showMap=false&amp;products=2010517APNAEE%3a1&amp;isForm=false">
+                                       </fieldset>
+                                       <button class="btn btn-block btn-outline-primary btn-margin change-store d-none" name="changeStore" value="changeStore">
+                                       Change Store
+                                       </button>
+                                       <fieldset class="shipping-address-block ">
+                                          <div class="row">
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_firstName">
+                                                   <label class="form-control-label" for="shippingFirstNameb67d6d287f8d8870dc5360a780">
+                                                   First Name
+                                                   </label>
+                                                   <input autofocus="" type="text" class="form-control shippingFirstName" id="shippingFirstNameb67d6d287f8d8870dc5360a780" aria-describedby="b67d6d287f8d8870dc5360a780FirstName" value="" name="dwfrm_shipping_shippingAddress_addressFields_firstName" required="" aria-required="true" maxlength="50" autocomplete="shipping given-name">
+                                                   <div class="invalid-feedback" id="b67d6d287f8d8870dc5360a780FirstName"></div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_lastName">
+                                                   <label class="form-control-label" for="shippingLastNameb67d6d287f8d8870dc5360a780">
+                                                   Last Name
+                                                   </label>
+                                                   <input type="text" class="form-control shippingLastName" id="shippingLastNameb67d6d287f8d8870dc5360a780" aria-describedby="b67d6d287f8d8870dc5360a780LastName" value="" name="dwfrm_shipping_shippingAddress_addressFields_lastName" required="" aria-required="true" maxlength="50" autocomplete="shipping family-name">
+                                                   <div class="invalid-feedback" id="b67d6d287f8d8870dc5360a780LastName"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-sm-12">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_address1">
+                                                   <label class="form-control-label" for="shippingAddressOneb67d6d287f8d8870dc5360a780">
+                                                   Address 1
+                                                   </label>
+                                                   <input type="text" class="form-control shippingAddressOne" id="shippingAddressOneb67d6d287f8d8870dc5360a780" aria-describedby="b67d6d287f8d8870dc5360a780AddressLine1" value="" name="dwfrm_shipping_shippingAddress_addressFields_address1" required="" aria-required="true" maxlength="50" autocomplete="shipping address-line1">
+                                                   <div class="invalid-feedback" id="b67d6d287f8d8870dc5360a780AddressLine1"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-sm-12">
+                                                <div class="form-group
+                                                   dwfrm_shipping_shippingAddress_addressFields_address2">
+                                                   <label class="form-control-label" for="shippingAddressTwob67d6d287f8d8870dc5360a780">
+                                                   Address 2
+                                                   </label>
+                                                   <input type="text" class="form-control shippingAddressTwo" id="shippingAddressTwob67d6d287f8d8870dc5360a780" aria-describedby="b67d6d287f8d8870dc5360a780AddressLine2" value="" name="dwfrm_shipping_shippingAddress_addressFields_address2" maxlength="50" autocomplete="shipping address-line2">
+                                                   <div class="invalid-feedback" id="b67d6d287f8d8870dc5360a780AddressLine2"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_country">
+                                                   <label class="form-control-label" for="shippingCountryb67d6d287f8d8870dc5360a780">
+                                                   Country
+                                                   </label>
+                                                   <select class="form-control shippingCountry custom-select" id="shippingCountryb67d6d287f8d8870dc5360a780" name="dwfrm_shipping_shippingAddress_addressFields_country" required="" aria-required="true" autocomplete="shipping country" aria-describedby="b67d6d287f8d8870dc5360a780Country">
+                                                      <option label=" "></option>
+                                                      <option id="US" value="US">United States</option>
+                                                   </select>
+                                                   <div class="invalid-feedback" id="b67d6d287f8d8870dc5360a780Country"></div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_states_stateCode">
+                                                   <label class="form-control-label" for="shippingStateb67d6d287f8d8870dc5360a780">
+                                                   State
+                                                   </label>
+                                                   <select class="form-control shippingState custom-select" id="shippingStateb67d6d287f8d8870dc5360a780" name="dwfrm_shipping_shippingAddress_addressFields_states_stateCode" required="" aria-required="true" autocomplete="shipping address-level1" aria-describedby="b67d6d287f8d8870dc5360a780State">
+                                                      <option id="" value=""> </option>
+                                                      <option id="AL" value="AL">Alabama</option>
+                                                      <option id="AK" value="AK">Alaska</option>
+                                                      <option id="AS" value="AS">American Samoa</option>
+                                                      <option id="AZ" value="AZ">Arizona</option>
+                                                      <option id="AR" value="AR">Arkansas</option>
+                                                      <option id="CA" value="CA">California</option>
+                                                      <option id="CO" value="CO">Colorado</option>
+                                                      <option id="CT" value="CT">Connecticut</option>
+                                                      <option id="DE" value="DE">Delaware</option>
+                                                      <option id="DC" value="DC">District of Columbia</option>
+                                                      <option id="FL" value="FL">Florida</option>
+                                                      <option id="GA" value="GA">Georgia</option>
+                                                      <option id="GU" value="GU">Guam</option>
+                                                      <option id="HI" value="HI">Hawaii</option>
+                                                      <option id="ID" value="ID">Idaho</option>
+                                                      <option id="IL" value="IL">Illinois</option>
+                                                      <option id="IN" value="IN">Indiana</option>
+                                                      <option id="IA" value="IA">Iowa</option>
+                                                      <option id="KS" value="KS">Kansas</option>
+                                                      <option id="KY" value="KY">Kentucky</option>
+                                                      <option id="LA" value="LA">Louisiana</option>
+                                                      <option id="ME" value="ME">Maine</option>
+                                                      <option id="MD" value="MD">Maryland</option>
+                                                      <option id="MA" value="MA">Massachusetts</option>
+                                                      <option id="MI" value="MI">Michigan</option>
+                                                      <option id="MN" value="MN">Minnesota</option>
+                                                      <option id="MS" value="MS">Mississippi</option>
+                                                      <option id="MO" value="MO">Missouri</option>
+                                                      <option id="MT" value="MT">Montana</option>
+                                                      <option id="NE" value="NE">Nebraska</option>
+                                                      <option id="NV" value="NV">Nevada</option>
+                                                      <option id="NH" value="NH">New Hampshire</option>
+                                                      <option id="NJ" value="NJ">New Jersey</option>
+                                                      <option id="NM" value="NM">New Mexico</option>
+                                                      <option id="NY" value="NY">New York</option>
+                                                      <option id="NC" value="NC">North Carolina</option>
+                                                      <option id="ND" value="ND">North Dakota</option>
+                                                      <option id="OH" value="OH">Ohio</option>
+                                                      <option id="OK" value="OK">Oklahoma</option>
+                                                      <option id="OR" value="OR">Oregon</option>
+                                                      <option id="PA" value="PA">Pennsylvania</option>
+                                                      <option id="PR" value="PR">Puerto Rico</option>
+                                                      <option id="RI" value="RI">Rhode Island</option>
+                                                      <option id="SC" value="SC">South Carolina</option>
+                                                      <option id="SD" value="SD">South Dakota</option>
+                                                      <option id="TN" value="TN">Tennessee</option>
+                                                      <option id="TX" value="TX">Texas</option>
+                                                      <option id="UT" value="UT">Utah</option>
+                                                      <option id="VT" value="VT">Vermont</option>
+                                                      <option id="VI" value="VI">Virgin Islands</option>
+                                                      <option id="VA" value="VA">Virginia</option>
+                                                      <option id="WA" value="WA">Washington</option>
+                                                      <option id="WV" value="WV">West Virginia</option>
+                                                      <option id="WI" value="WI">Wisconsin</option>
+                                                      <option id="WY" value="WY">Wyoming</option>
+                                                      <option id="AE" value="AE">Armed Forces Africa</option>
+                                                      <option id="AA" value="AA">Armed Forces America (exc. Canada)</option>
+                                                      <option id="AE" value="AE">Armed Forces Canada</option>
+                                                      <option id="AE" value="AE">Armed Forces Europe</option>
+                                                      <option id="AE" value="AE">Armed Forces Middle East</option>
+                                                      <option id="AP" value="AP">Armed Forces Pacific</option>
+                                                      <option id="OTHER" value="OTHER">Non-US/Other</option>
+                                                   </select>
+                                                   <div class="invalid-feedback" id="b67d6d287f8d8870dc5360a780State"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_city">
+                                                   <label class="form-control-label" for="shippingAddressCityb67d6d287f8d8870dc5360a780">
+                                                   City
+                                                   </label>
+                                                   <input type="text" class="form-control shippingAddressCity" id="shippingAddressCityb67d6d287f8d8870dc5360a780" aria-describedby="b67d6d287f8d8870dc5360a780City" value="" name="dwfrm_shipping_shippingAddress_addressFields_city" required="" aria-required="true" maxlength="50" minlength="2" autocomplete="shipping address-level2">
+                                                   <div class="invalid-feedback" id="b67d6d287f8d8870dc5360a780City"></div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="form-group
+                                                   required
+                                                   dwfrm_shipping_shippingAddress_addressFields_postalCode">
+                                                   <label class="form-control-label" for="shippingZipCodeb67d6d287f8d8870dc5360a780">
+                                                   ZIP Code
+                                                   </label>
+                                                   <input type="text" class="form-control shippingZipCode" id="shippingZipCodeb67d6d287f8d8870dc5360a780" aria-describedby="b67d6d287f8d8870dc5360a780ZipCode" value="" name="dwfrm_shipping_shippingAddress_addressFields_postalCode" required="" aria-required="true" maxlength="10" minlength="5" pattern="(^\d{5}(-\d{4})?$)|(^[abceghjklmnprstvxyABCEGHJKLMNPRSTVXY]{1}\d{1}[A-Za-z]{1} *\d{1}[A-Za-z]{1}\d{1}$)" autocomplete="shipping postal-code">
+                                                   <div class="invalid-feedback" id="b67d6d287f8d8870dc5360a780ZipCode"></div>
+                                                   <span>Example: 12345</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-sm-12">
+                                                <div class="form-group
+                                                   dwfrm_shipping_shippingAddress_addressFields_phone">
+                                                   <label class="form-control-label" for="shippingPhoneNumberb67d6d287f8d8870dc5360a780">
+                                                   Phone Number
+                                                   </label>
+                                                   <input type="tel" class="form-control shippingPhoneNumber" id="shippingPhoneNumberb67d6d287f8d8870dc5360a780" aria-describedby="b67d6d287f8d8870dc5360a780TelephoneNumber" value="" name="dwfrm_shipping_shippingAddress_addressFields_phone" maxlength="20" minlength="10" autocomplete="shipping tel">
+                                                   <div class="invalid-feedback" id="b67d6d287f8d8870dc5360a780TelephoneNumber"></div>
+                                                   <span>Example: 9234567890</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </fieldset>
+                                       <fieldset class="gift-message-block ">
+                                          <div class="row">
+                                             <div class="col-12">
+                                                <div class="form-group">
+                                                   <div class="custom-control custom-checkbox">
+                                                      <input class="custom-control-input gift" type="checkbox" id="isGift-b67d6d287f8d8870dc5360a780-aea38679c32a44bc877ac52402" name="dwfrm_shipping_shippingAddress_isGift" value="true">
+                                                      <label for="isGift-b67d6d287f8d8870dc5360a780-aea38679c32a44bc877ac52402" class="custom-control-label checkout-checkbox">
+                                                      This is a Gift
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row gift-message d-none">
+                                             <div class="col-12">
+                                                <div class="form-group">
+                                                   <label for="giftMessage">Message</label>
+                                                   <textarea class="form-control gift-message-aea38679c32a44bc877ac52402" id="giftMessage" rows="3" name="dwfrm_shipping_shippingAddress_giftMessage" value="" maxlength="250"></textarea>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </fieldset>
+                                    </div>
+                                    <div class="view-address-block d-none">
+                                       <h3>Shipping Method
+                                          <span>
+                                          </span>
+                                       </h3>
+                                       <div class="row leading-lines">
+                                          <p class="col-8 start-lines">
+                                             <span class="display-name">Ground</span>
+                                          </p>
+                                          <p class="col-4 end-lines text-right">
+                                             <span class="price">
+                                             $7.99
+                                             </span>
+                                          </p>
+                                       </div>
+                                       <div class="summary-details gift-summary d-none">
+                                          <p class="summary-section-label">Gift Message:</p>
+                                          <div class="gift-message-summary">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="multi-ship-action-buttons">
+                                       <button class="btn btn-outline-primary col-12 btn-enter-multi-ship " data-action="enter">
+                                       Enter Address
+                                       </button>
+                                       <div class="row multi-ship-address-actions d-none">
+                                          <button class="btn btn-outline-primary offset-1 col-5 btn-cancel-multi-ship-address" data-action="cancel">
+                                          Cancel
+                                          </button>
+                                          <button class="btn btn-outline-primary col-5 btn-save-multi-ship" data-action="save">
+                                          Save
+                                          </button>
+                                       </div>
+                                       <button class="btn btn-outline-primary col-12 btn-save-multi-ship save-shipment d-none" data-action="save">
+                                       Save
+                                       </button>
+                                       <button class="btn btn-outline-primary btn-edit-multi-ship col-12 d-none" data-action="edit">
+                                       Edit
+                                       </button>
+                                    </div>
+                                    <input type="hidden" name="csrf_token" value="CQZTTaSkACQFISBluzApmIe5f4aBgtlS22YClwp6NsNOXOywrgPJ3otSHhBWlFh4awV7jr7YKxJaEevBENQZbuds70Lmzz5Rvv-tHNT71L3mKzlbMEg7oWzSiM97L90hE9IXYWQ0rZRjOo0QqrkYGrNLIY4h2Hr8w71LqBtvdPeZ7leWdP4=">
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card shipping-summary">
+                        <div class="card-header clearfix">
+                           <h2 class="pull-left card-header-custom">Shipping</h2>
+                           <button class="edit-button pull-right" aria-label="Edit Shipping">Edit</button>
+                        </div>
+                        <div class="card-body">
+                           <div class="single-shipping" data-shipment-summary="aea38679c32a44bc877ac52402">
+                              <div class="d-flex justify-content-between">
+                                 <p class="summary-section-label shipping-addr-label">Shipping Address</p>
+                              </div>
+                              <div class="summary-details shipping">
+                                 <div class="address-summary">
+                                    <div>
+                                       <span class="firstName">
+                                       </span>
+                                       <span class="lastName">
+                                       </span>
+                                    </div>
+                                    <div class="address1">
+                                    </div>
+                                    <div class="address2">
+                                    </div>
+                                    <span class="city">
+                                    </span>
+                                    <span class="stateCode">
+                                    </span>
+                                    <span class="postalCode">
+                                    </span>
+                                 </div>
+                                 <div class="shipping-phone">
+                                 </div>
+                              </div>
+                              <p class="summary-section-label shipping-method-label">Shipping Method</p>
+                              <div class="row summary-details leading-lines">
+                                 <div class="col-8 start-lines">
+                                    <p class="shipping-method">
+                                       <span class="shipping-method-title">Ground</span>
+                                       <span class="shipping-method-arrival-time">
+                                       </span>
+                                    </p>
+                                 </div>
+                                 <div class="col-4 end-lines">
+                                    <p class="text-right pricing shipping-method-price">
+                                       $7.99
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="summary-details gift-summary d-none">
+                                 <p class="summary-section-label">Gift Message:</p>
+                                 <div class="gift-message-summary">
+                                 </div>
+                              </div>
+                           </div>
+                           <p class="summary-section-label shipping-addr-label multi-shipping">
+                              Addresses &amp; shipping methods are listed under your items.
+                           </p>
+                        </div>
+                     </div>
+                     <!-- Step 3: Payment and Billing-->
+                     <div class="card ghost payment">
+                        <div class="card-header">
+                           <h2 class="card-header-custom">Payment</h2>
+                        </div>
+                     </div>
+                     <div class="card payment-form">
+                        <div class="card-header">
+                           <h2 class="card-header-custom">Payment</h2>
+                        </div>
+                        <div class="card-body">
+                           <form autocomplete="on" method="POST" action="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/CheckoutServices-SubmitPayment" data-address-mode="new" name="dwfrm_billing" id="dwfrm_billing" novalidate="">
+                              <fieldset class="billing-address-block">
+                                 <!-- Billing Address Selector                                             -->
+                                 <fieldset class="address-selector-block">
+                                    <div class="form-group">
+                                       <label class="form-control-label" for="billingAddressSelector">
+                                       Billing Address
+                                       </label>
+                                       <select id="billingAddressSelector" name="addressSelector" class="addressSelector form-control" data-create-shipment-url="https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/Checkout-SetBillingAddress">
+                                          <option value="new" data-first-name="" data-last-name="" data-address1="" data-address2="" data-city="" data-state-code="" data-country-code="" data-postal-code="" data-phone="">
+                                             New Address
+                                          </option>
+                                       </select>
+                                       <div class="invalid-feedback"></div>
+                                       <div class="row">
+                                          <button class="col-6 text-center btn-show-details btn" type="button">Update Address</button>
+                                          <button class="col-6 text-center btn-add-new btn" type="button">Add new address</button>
+                                       </div>
+                                    </div>
+                                 </fieldset>
+                                 <!-- Billing Address                                                      -->
+                                 <fieldset class="billing-address">
+                                    <div class="row">
+                                       <div class="col-sm-6">
+                                          <div class="form-group
+                                             required
+                                             dwfrm_billing_addressFields_firstName">
+                                             <label class="form-control-label" for="billingFirstName">First Name</label>
+                                             <input autofocus="" type="text" class="form-control billingFirstName" id="billingFirstName" value="" name="dwfrm_billing_addressFields_firstName" required="" aria-required="true" maxlength="50" autocomplete="given-name">
+                                             <div class="invalid-feedback"></div>
+                                          </div>
+                                       </div>
+                                       <div class="col-sm-6">
+                                          <div class="form-group
+                                             required
+                                             dwfrm_billing_addressFields_lastName">
+                                             <label class="form-control-label" for="billingLastName">Last Name</label>
+                                             <input type="text" class="form-control billingLastName" id="billingLastName" value="" name="dwfrm_billing_addressFields_lastName" required="" aria-required="true" maxlength="50" autocomplete="family-name">
+                                             <div class="invalid-feedback"></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-sm-12">
+                                          <div class="form-group
+                                             required
+                                             dwfrm_billing_addressFields_address1">
+                                             <label class="form-control-label" for="billingAddressOne">Address 1</label>
+                                             <input type="text" class="form-control billingAddressOne" id="billingAddressOne" value="" name="dwfrm_billing_addressFields_address1" required="" aria-required="true" maxlength="50" autocomplete="billing address-line1">
+                                             <div class="invalid-feedback"></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-sm-12">
+                                          <div class="form-group
+                                             dwfrm_billing_addressFields_address2">
+                                             <label class="form-control-label" for="billingAddressTwo">Address 2</label>
+                                             <input type="text" class="form-control billingAddressTwo" id="billingAddressTwo" value="" name="dwfrm_billing_addressFields_address2" maxlength="50" autocomplete="billing address-line2">
+                                             <div class="invalid-feedback"></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-sm-6">
+                                          <div class="form-group
+                                             required
+                                             dwfrm_billing_addressFields_country">
+                                             <label class="form-control-label" for="billingCountry">Country</label>
+                                             <select class="form-control billingCountry custom-select" id="billingCountry" name="dwfrm_billing_addressFields_country" required="" aria-required="true" autocomplete="billing country">
+                                                <option label=" "></option>
+                                                <option id="US" value="US">
+                                                   United States
+                                                </option>
+                                             </select>
+                                             <div class="invalid-feedback"></div>
+                                          </div>
+                                       </div>
+                                       <div class="col-sm-6">
+                                          <div class="form-group
+                                             required
+                                             dwfrm_billing_addressFields_states_stateCode">
+                                             <label class="form-control-label" for="billingState">State</label>
+                                             <select class="form-control billingState custom-select" id="billingState" name="dwfrm_billing_addressFields_states_stateCode" required="" aria-required="true" autocomplete="billing address-level1">
+                                                <option id="" value="">
+                                                </option>
+                                                <option id="AL" value="AL">
+                                                   Alabama
+                                                </option>
+                                                <option id="AK" value="AK">
+                                                   Alaska
+                                                </option>
+                                                <option id="AS" value="AS">
+                                                   American Samoa
+                                                </option>
+                                                <option id="AZ" value="AZ">
+                                                   Arizona
+                                                </option>
+                                                <option id="AR" value="AR">
+                                                   Arkansas
+                                                </option>
+                                                <option id="CA" value="CA">
+                                                   California
+                                                </option>
+                                                <option id="CO" value="CO">
+                                                   Colorado
+                                                </option>
+                                                <option id="CT" value="CT">
+                                                   Connecticut
+                                                </option>
+                                                <option id="DE" value="DE">
+                                                   Delaware
+                                                </option>
+                                                <option id="DC" value="DC">
+                                                   District of Columbia
+                                                </option>
+                                                <option id="FL" value="FL">
+                                                   Florida
+                                                </option>
+                                                <option id="GA" value="GA">
+                                                   Georgia
+                                                </option>
+                                                <option id="GU" value="GU">
+                                                   Guam
+                                                </option>
+                                                <option id="HI" value="HI">
+                                                   Hawaii
+                                                </option>
+                                                <option id="ID" value="ID">
+                                                   Idaho
+                                                </option>
+                                                <option id="IL" value="IL">
+                                                   Illinois
+                                                </option>
+                                                <option id="IN" value="IN">
+                                                   Indiana
+                                                </option>
+                                                <option id="IA" value="IA">
+                                                   Iowa
+                                                </option>
+                                                <option id="KS" value="KS">
+                                                   Kansas
+                                                </option>
+                                                <option id="KY" value="KY">
+                                                   Kentucky
+                                                </option>
+                                                <option id="LA" value="LA">
+                                                   Louisiana
+                                                </option>
+                                                <option id="ME" value="ME">
+                                                   Maine
+                                                </option>
+                                                <option id="MD" value="MD">
+                                                   Maryland
+                                                </option>
+                                                <option id="MA" value="MA">
+                                                   Massachusetts
+                                                </option>
+                                                <option id="MI" value="MI">
+                                                   Michigan
+                                                </option>
+                                                <option id="MN" value="MN">
+                                                   Minnesota
+                                                </option>
+                                                <option id="MS" value="MS">
+                                                   Mississippi
+                                                </option>
+                                                <option id="MO" value="MO">
+                                                   Missouri
+                                                </option>
+                                                <option id="MT" value="MT">
+                                                   Montana
+                                                </option>
+                                                <option id="NE" value="NE">
+                                                   Nebraska
+                                                </option>
+                                                <option id="NV" value="NV">
+                                                   Nevada
+                                                </option>
+                                                <option id="NH" value="NH">
+                                                   New Hampshire
+                                                </option>
+                                                <option id="NJ" value="NJ">
+                                                   New Jersey
+                                                </option>
+                                                <option id="NM" value="NM">
+                                                   New Mexico
+                                                </option>
+                                                <option id="NY" value="NY">
+                                                   New York
+                                                </option>
+                                                <option id="NC" value="NC">
+                                                   North Carolina
+                                                </option>
+                                                <option id="ND" value="ND">
+                                                   North Dakota
+                                                </option>
+                                                <option id="OH" value="OH">
+                                                   Ohio
+                                                </option>
+                                                <option id="OK" value="OK">
+                                                   Oklahoma
+                                                </option>
+                                                <option id="OR" value="OR">
+                                                   Oregon
+                                                </option>
+                                                <option id="PA" value="PA">
+                                                   Pennsylvania
+                                                </option>
+                                                <option id="PR" value="PR">
+                                                   Puerto Rico
+                                                </option>
+                                                <option id="RI" value="RI">
+                                                   Rhode Island
+                                                </option>
+                                                <option id="SC" value="SC">
+                                                   South Carolina
+                                                </option>
+                                                <option id="SD" value="SD">
+                                                   South Dakota
+                                                </option>
+                                                <option id="TN" value="TN">
+                                                   Tennessee
+                                                </option>
+                                                <option id="TX" value="TX">
+                                                   Texas
+                                                </option>
+                                                <option id="UT" value="UT">
+                                                   Utah
+                                                </option>
+                                                <option id="VT" value="VT">
+                                                   Vermont
+                                                </option>
+                                                <option id="VI" value="VI">
+                                                   Virgin Islands
+                                                </option>
+                                                <option id="VA" value="VA">
+                                                   Virginia
+                                                </option>
+                                                <option id="WA" value="WA">
+                                                   Washington
+                                                </option>
+                                                <option id="WV" value="WV">
+                                                   West Virginia
+                                                </option>
+                                                <option id="WI" value="WI">
+                                                   Wisconsin
+                                                </option>
+                                                <option id="WY" value="WY">
+                                                   Wyoming
+                                                </option>
+                                                <option id="AE" value="AE">
+                                                   Armed Forces Africa
+                                                </option>
+                                                <option id="AA" value="AA">
+                                                   Armed Forces America (exc. Canada)
+                                                </option>
+                                                <option id="AE" value="AE">
+                                                   Armed Forces Canada
+                                                </option>
+                                                <option id="AE" value="AE">
+                                                   Armed Forces Europe
+                                                </option>
+                                                <option id="AE" value="AE">
+                                                   Armed Forces Middle East
+                                                </option>
+                                                <option id="AP" value="AP">
+                                                   Armed Forces Pacific
+                                                </option>
+                                                <option id="OTHER" value="OTHER">
+                                                   Non-US/Other
+                                                </option>
+                                             </select>
+                                             <div class="invalid-feedback"></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-sm-6">
+                                          <div class="form-group
+                                             required
+                                             dwfrm_billing_addressFields_city">
+                                             <label class="form-control-label" for="billingAddressCity">City</label>
+                                             <input type="text" class="form-control billingAddressCity" id="billingAddressCity" value="" name="dwfrm_billing_addressFields_city" required="" aria-required="true" maxlength="50" minlength="2" autocomplete="billing address-level2">
+                                             <div class="invalid-feedback"></div>
+                                          </div>
+                                       </div>
+                                       <div class="col-sm-6">
+                                          <div class="form-group
+                                             required
+                                             dwfrm_billing_addressFields_postalCode">
+                                             <label class="form-control-label" for="billingZipCode">ZIP Code</label>
+                                             <input type="text" class="form-control billingZipCode" id="billingZipCode" value="" name="dwfrm_billing_addressFields_postalCode" required="" aria-required="true" maxlength="10" minlength="5" pattern="(^\d{5}(-\d{4})?$)|(^[abceghjklmnprstvxyABCEGHJKLMNPRSTVXY]{1}\d{1}[A-Za-z]{1} *\d{1}[A-Za-z]{1}\d{1}$)" autocomplete="billing postal-code">
+                                             <div class="invalid-feedback"></div>
+                                             <span>Example: 12345</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </fieldset>
+                                 <input type="hidden" name="csrf_token" value="CQZTTaSkACQFISBluzApmIe5f4aBgtlS22YClwp6NsNOXOywrgPJ3otSHhBWlFh4awV7jr7YKxJaEevBENQZbuds70Lmzz5Rvv-tHNT71L3mKzlbMEg7oWzSiM97L90hE9IXYWQ0rZRjOo0QqrkYGrNLIY4h2Hr8w71LqBtvdPeZ7leWdP4=">
+                                 <input type="hidden" name="localizedNewAddressTitle" value="New Address">
+                              </fieldset>
+                              <!-- Contact Info (Email and Phone)                                       -->
+                              <fieldset class="contact-info-block">
+                                 <div class="row">
+                                    <div class="col-sm-12">
+                                       <div class="form-group
+                                          dwfrm_billing_contactInfoFields_phone">
+                                          <label class="form-control-label" for="phoneNumber">Phone Number</label>
+                                          <button type="button" class="info-icon">
+                                          <span class="icon" aria-hidden="true">i</span>
+                                          <span class="sr-only">Help</span>
+                                          <span class="tooltip d-none">
+                                          The phone number associated with this credit card.
+                                          </span>
+                                          </button>
+                                          <input type="tel" class="form-control phone" id="phoneNumber" value="" name="dwfrm_billing_contactInfoFields_phone" maxlength="20" minlength="10" aria-describedby="phoneInvalidMessage">
+                                          <div class="invalid-feedback" id="phoneInvalidMessage"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </fieldset>
+                              <!-- Payment Options                                                      -->
+                              <fieldset>
+                                 <div class="form-nav billing-nav payment-information" data-payment-method-id="CREDIT_CARD" data-is-new-payment="true">
+                                    <ul class="nav nav-tabs nav-fill payment-options" role="tablist">
+                                       <li class="nav-item applepay-tab-wrapper" data-method-id="DW_APPLE_PAY">
+                                          <a class="nav-link applepay-tab" data-toggle="tab" href="../en_US/checkout?stage=customer#applepay-content" role="tab">
+                                          <img class="applepay-options" src="./Sites-NTOSFRA-Site_files/apple.png" height="32" alt="Apple Pay" title="Apple Pay">
+                                          </a>
+                                       </li>
+                                       <li class="nav-item" data-method-id="CREDIT_CARD">
+                                          <a class="nav-link credit-card-tab active" data-toggle="tab" href="../en_US/checkout?stage=customer#credit-card-content" role="tab">
+                                          <img class="credit-card-option" src="./Sites-NTOSFRA-Site_files/credit.png" height="32" alt="Credit Card" title="Credit Card">
+                                          </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="credit-card-selection-new">
+                                    <div class="tab-content">
+                                       <div class="tab-pane applepay-content" id="applepay-content" role="tabpanel">
+                                          <isapplepay class="apple-pay-cart btn btn-block"></isapplepay>
+                                       </div>
+                                       <div class="tab-pane active credit-card-content" id="credit-card-content" role="tabpanel">
+                                          <fieldset class="payment-form-fields">
+                                             <input type="hidden" class="form-control" name="dwfrm_billing_paymentMethod" value="CREDIT_CARD">
+                                             <fieldset class="credit-card-form ">
+                                                <input type="hidden" class="form-control" id="cardType" name="dwfrm_billing_creditCardFields_cardType" value="">
+                                                <div class="row">
+                                                   <div class="col-12">
+                                                      <div class="form-group
+                                                         required
+                                                         dwfrm_billing_creditCardFields_cardNumber">
+                                                         <label class="form-control-label" for="cardNumber">Card Number</label>
+                                                         <div class="card-number-wrapper">
+                                                            <input type="text" class="form-control cardNumber" id="cardNumber" value="" name="dwfrm_billing_creditCardFields_cardNumber" required="" aria-required="true" maxlength="20" autocomplete="cc-number" aria-describedby="cardNumberInvalidMessage">
+                                                            <div class="invalid-feedback" id="cardNumberInvalidMessage"></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="row">
+                                                   <div class="col-6">
+                                                      <div class="form-group
+                                                         required
+                                                         dwfrm_billing_creditCardFields_expirationMonth">
+                                                         <label class="form-control-label" for="expirationMonth">Expiration Month</label>
+                                                         <select class="form-control expirationMonth custom-select" id="expirationMonth" name="dwfrm_billing_creditCardFields_expirationMonth" required="" aria-required="true" autocomplete="cc-exp-month" aria-describedby="expirationMonthInvalidMessage">
+                                                            <option id="" value="">
+                                                               month
+                                                            </option>
+                                                            <option id="01" value="1">
+                                                               01
+                                                            </option>
+                                                            <option id="02" value="2">
+                                                               02
+                                                            </option>
+                                                            <option id="03" value="3">
+                                                               03
+                                                            </option>
+                                                            <option id="04" value="4">
+                                                               04
+                                                            </option>
+                                                            <option id="05" value="5">
+                                                               05
+                                                            </option>
+                                                            <option id="06" value="6">
+                                                               06
+                                                            </option>
+                                                            <option id="07" value="7">
+                                                               07
+                                                            </option>
+                                                            <option id="08" value="8">
+                                                               08
+                                                            </option>
+                                                            <option id="09" value="9">
+                                                               09
+                                                            </option>
+                                                            <option id="10" value="10">
+                                                               10
+                                                            </option>
+                                                            <option id="11" value="11">
+                                                               11
+                                                            </option>
+                                                            <option id="12" value="12">
+                                                               12
+                                                            </option>
+                                                         </select>
+                                                         <div class="invalid-feedback" id="expirationMonthInvalidMessage"></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-6">
+                                                      <div class="form-group
+                                                         required
+                                                         dwfrm_billing_creditCardFields_expirationYear">
+                                                         <label class="form-control-label" for="expirationYear">Expiration Year</label>
+                                                         <select class="form-control expirationYear custom-select" id="expirationYear" name="dwfrm_billing_creditCardFields_expirationYear" required="" aria-required="true" autocomplete="cc-exp-year" aria-describedby="expirationYearInvalidMessage">
+                                                            <option value="">year</option>
+                                                            <option id="2024" value="2024">
+                                                               2024
+                                                            </option>
+                                                            <option id="2025" value="2025">
+                                                               2025
+                                                            </option>
+                                                            <option id="2026" value="2026">
+                                                               2026
+                                                            </option>
+                                                            <option id="2027" value="2027">
+                                                               2027
+                                                            </option>
+                                                            <option id="2028" value="2028">
+                                                               2028
+                                                            </option>
+                                                            <option id="2029" value="2029">
+                                                               2029
+                                                            </option>
+                                                            <option id="2030" value="2030">
+                                                               2030
+                                                            </option>
+                                                            <option id="2031" value="2031">
+                                                               2031
+                                                            </option>
+                                                            <option id="2032" value="2032">
+                                                               2032
+                                                            </option>
+                                                            <option id="2033" value="2033">
+                                                               2033
+                                                            </option>
+                                                         </select>
+                                                         <div class="invalid-feedback" id="expirationYearInvalidMessage"></div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="row">
+                                                   <div class="col-sm-6">
+                                                      <div class="form-group
+                                                         required
+                                                         dwfrm_billing_creditCardFields_securityCode">
+                                                         <label class="form-control-label" for="securityCode">Security Code</label>
+                                                         <button type="button" class="info-icon">
+                                                         <span class="icon" aria-hidden="true">i</span>
+                                                         <span class="sr-only">Help</span>
+                                                         <span class="tooltip d-none">
+                                                         Please enter the security (CVV) code on the back of your card.
+                                                         </span>
+                                                         </button>
+                                                         <input type="text" class="form-control securityCode" id="securityCode" name="dwfrm_billing_creditCardFields_securityCode" required="" aria-required="true" value="" maxlength="4" aria-describedby="securityCodeInvalidMessage">
+                                                         <div class="invalid-feedback" id="securityCodeInvalidMessage"></div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="row">
+                                                   <div class="col">
+                                                   </div>
+                                                </div>
+                                             </fieldset>
+                                          </fieldset>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </fieldset>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="card payment-summary">
+                        <div class="card-header clearfix">
+                           <h2 class="pull-left card-header-custom">Payment</h2>
+                           <button class="edit-button pull-right" aria-label="Edit Payment">Edit</button>
+                        </div>
+                        <div class="card-body">
+                           <span class="summary-section-label billing-addr-label">Billing Address</span><br>
+                           <div class="summary-details billing">
+                              <div class="address-summary">
+                                 <div>
+                                    <span class="firstName">
+                                    </span>
+                                    <span class="lastName">
+                                    </span>
+                                 </div>
+                                 <div class="address1">
+                                 </div>
+                                 <div class="address2">
+                                 </div>
+                                 <span class="city">
+                                 </span>
+                                 <span class="stateCode">
+                                 </span>
+                                 <span class="postalCode">
+                                 </span>
+                              </div>
+                              <span class="order-summary-email">null</span>
+                              <br>
+                              <span class="order-summary-phone"></span>
+                           </div>
+                           <div class="summary-details">
+                              <span class="summary-section-label payment-info-label">Payment</span><br>
+                              <div class="payment-details">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Checkout Workflow Buttons -->
+                     <div class="row">
+                        <div class="col-12 next-step-button">
+                           <div class="mb-sm-3">
+                              <button class="btn btn-primary btn-block submit-shipping" type="submit" name="submit" value="submit-shipping">
+                              Go to Payment
+                              </button>
+                              <button class="btn btn-primary btn-block submit-payment" type="submit" name="submit" value="submit-payment">
+                              Place Order
+                              </button>
+                              <button class="btn btn-primary btn-block place-order" data-action="/on/demandware.store/Sites-NTOSFRA-Site/en_US/CheckoutServices-PlaceOrder" type="submit" name="submit" value="place-order">Place Order
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Order Totals, Details and Summary -->
+                  <div class="col-sm-5">
+                     <div class="card">
+                        <div class="card-header">
+                           <h2 class="card-header-custom">Order Summary</h2>
+                        </div>
+                        <div class="card-body order-total-summary">
+                           <div class="row subtotal-item">
+                              <div class="col-6">
+                                 <div class="order-receipt-label">
+                                    <span>Subtotal</span>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="text-right">
+                                    <span class="sub-total">$149.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row order-discount 
+                              d-none">
+                              <div class="col-6">
+                                 <div class="order-receipt-label">
+                                    <span>Order Discount</span>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="text-right">
+                                    <span class="order-discount-total">- $0.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row shipping-item">
+                              <div class="col-6">
+                                 <div class="order-receipt-label">
+                                    <span>Shipping</span>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="text-right">
+                                    <span class="shipping-total-cost">$7.99</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row shipping-discount ">
+                              <div class="col-6">
+                                 <div class="order-receipt-label">
+                                    <span>Shipping Discount</span>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="text-right">
+                                    <span class="shipping-discount-total">- $7.99</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row sales-tax-item">
+                              <div class="col-6">
+                                 <div class="order-receipt-label">
+                                    <span>Sales Tax</span>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="text-right">
+                                    <span class="tax-total">$7.45</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row grand-total">
+                              <div class="col-6">
+                                 <div class="order-receipt-label">
+                                    <span>Total</span>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="text-right">
+                                    <span class="grand-total-sum">$156.45</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card order-product-summary">
+                        <!-- <div class="card-body">
+                           <div class="product-summary-block">
+                              <div class="product-line-item" data-product-line-item="b67d6d287f8d8870dc5360a780">
+                                 <div class="d-flex flex-row">
+                                    <div class="item-image">
+                                       <a href="../en_US/women%E2%80%99s-pill-vest-2010517APNAEE.html">
+                                       <img class="product-image" src="./Sites-NTOSFRA-Site_files/2010517APN-0.jpg" alt="Women’s Pill Vest" title="Women’s Pill Vest">
+                                       </a>
+                                    </div>
+                                    <div class="product-line-item-details flex-grow-1">
+                                       <div class="line-item-header">
+                                          <div class="line-item-name">
+                                             <span>Women’s Pill Vest</span>
+                                          </div>
+                                       </div>
+                                       <div class="item-attributes">
+                                          <div class="line-item-attributes">
+                                             <span class="attribute-label">
+                                             Color:
+                                             </span>
+                                             <span class="attribute-value">
+                                             Everglade
+                                             </span>
+                                          </div>
+                                          <div class="line-item-attributes">
+                                             <span class="attribute-label">
+                                             Size:
+                                             </span>
+                                             <span class="attribute-value">
+                                             S
+                                             </span>
+                                          </div>
+                                          <div class="item-options">
+                                          </div>
+                                          <div class="line-item-quanity-info quantity" data-uuid="b67d6d287f8d8870dc5360a780" data-pid="2010517APNAEE">
+                                             <span class="qty-card-quantity-label">
+                                             Quantity
+                                             </span>:
+                                             <span class="qty-card-quantity-count">
+                                             1
+                                             </span>
+                                          </div>
+                                          <div class="line-item-total-price justify-content-end">
+                                             <div class="item-total-b67d6d287f8d8870dc5360a780 price">
+                                                <div class="d-flex justify-content-end">
+                                                   <div class="strike-through non-adjusted-price">
+                                                      null
+                                                   </div>
+                                                   <div class="pricing line-item-total-price-amount item-total-b67d6d287f8d8870dc5360a780">
+                                                      $149.00
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Template used by client to redraw shipping methods                           -->
+            <div id="pli-shipping-summary-template" class="d-none">
+               <h3 class="shipping-header-text">Shipping To</h3>
+               <p>
+                  <span class="ship-to-message"></span>
+                  <span class="ship-to-name"></span>
+                  <span class="ship-to-address1"></span>
+                  <span class="ship-to-address2"></span>
+                  <span class="ship-to-city-st-zip"><span class="ship-to-city"></span> <span class="ship-to-st"></span> <span class="ship-to-zip"></span> </span>
+                  <span class="ship-to-phone"></span>
+               </p>
+               <h3>Shipping Method<span></span></h3>
+               <div class="row leading-lines">
+                  <p class="col-8 start-lines">
+                     <span class="display-name"></span>
+                     <span class="text-muted arrival-time"></span>
+                  </p>
+                  <p class="col-4 end-lines text-right">
+                     <span class="price"></span>
+                  </p>
+               </div>
+               <div class="summary-details gift-summary">
+                  <h3>Gift Message:</h3>
+                  <div class="gift-message-summary"></div>
+               </div>
+            </div>
+            <div class="error-messaging"></div>
+            <div class="modal-background"></div>
+         </section>
+         <footer class="site-footer">
+            <div class="site-footer__inner-container">
+               <div class="container">
+                  <div class="site-footer__brand text-center py-3 py-md-4">
+                     <a href="../en_US/homepage.html">
+                     <img src="./Sites-NTOSFRA-Site_files/footer-logo.svg" alt="Commerce Cloud Storefront Reference Architecture">
+                     </a>
+                  </div>
+               </div>
+               <div class="notice py-3">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col">
+                           <div class="content-asset">
+                              <!-- dwMarker="content" dwContentID="c7bded0da5c1cc4a575fedcb71" -->
+                              <div class="container_sm">
+                                 <div class="row justify-content-center">
+                                    <div class="col-11">
+                                       <div class="row">
+                                          <div class="site-footer__sflogo col-md-3 py-2">
+                                             Built on <img alt="Salesforce" src="./Sites-NTOSFRA-Site_files/logo-salesforce.svg" title="Salesforce" style="height:40px;">
+                                          </div>
+                                          <div class="col-md-9 py-2 pl-4">
+                                             <div class="row mb-1">
+                                                <div class="col-md-12 d-flex align-items-center">
+                                                   <div class="demo-site">© Copyright <span id="year">2024</span> Salesforce.com, inc. | Northern Trail Outfitters is not a real company. It is used for Salesforce demos. No orders will be processed. Test</div>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12 d-flex align-items-center">
+                                                   <ul class="list-inline">
+                                                      <li class="list-inline-item"><a href="https://www.salesforce.com/company/legal/" target="_blank" title="Terms &amp; Conditions">Legal</a></li>
+                                                      <li class="list-inline-item"><a href="https://www.salesforce.com/company/legal/sfdc-website-terms-of-service/" target="_blank" title="Terms &amp; Conditions">Terms Of Service</a></li>
+                                                      <li class="list-inline-item"><a href="https://www.salesforce.com/company/privacy/" target="_blank" title="Privacy Policy">Privacy Information</a></li>
+                                                      <li class="list-inline-item"><a href="https://www.salesforce.com/company/disclosure/" target="_blank">Responsible Disclosure</a></li>
+                                                      <li class="list-inline-item"><a href="https://trust.salesforce.com/en/" target="_blank">Trust</a></li>
+                                                      <li class="list-inline-item"><a href="https://www.salesforce.com/company/contact-us/" target="_blank">Contact</a></li>
+                                                      <li class="list-inline-item"><a class="ot-sdk-show-settings" href="../en_US/checkout?stage=customer#" title="Privacy Preferences">Cookie Preferences</a></li>
+                                                      <li class="list-inline-item"><a href="https://www.salesforce.com/form/other/privacy-request/" target="_blank"><img src="./Sites-NTOSFRA-Site_files/privacyoptions29x14.png" alt="Privacy Choices Icon"> Your Privacy Choices</a></li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <script>
+                                 document.getElementById("year").innerHTML = new Date().getFullYear();
+                              </script>
+                           </div>
+                           <!-- End content-asset -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="back-to-top" title="Back to top" aria-hidden="true">
+               <span class="fa-stack fa-lg">
+               <i class="fas fa-circle fa-inverse fa-stack-2x"></i>
+               <i class="far fa-arrow-up fa-stack-1x"></i>
+               </span>
+               </button>
+            </div>
+         </footer>
+         <span class="api-true  tracking-consent" data-caonline="true" data-url="/on/demandware.store/Sites-NTOSFRA-Site/en_US/ConsentTracking-GetContent?cid=tracking_hint" data-reject="/on/demandware.store/Sites-NTOSFRA-Site/en_US/ConsentTracking-SetSession?consent=false" data-accept="/on/demandware.store/Sites-NTOSFRA-Site/en_US/ConsentTracking-SetSession?consent=true" data-accepttext="Yes" data-rejecttext="No" data-heading="Tracking Consent"></span>
+      </div>
+      <div id="snapins_invite" inert="" aria-live="assertive" role="dialog" aria-atomic="true" style="visibility: visible; position: absolute; left: -1000px; top: -1000px; z-index: 10000;" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content p-5">
+               <div class="modal-header">
+                  <button type="button" class="close close-invite" data-dismiss="modal" aria-label="Close" tabindex="-1">
+                  <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <div class="modal-body text-center">
+                  <i class="far fa-comments-alt fa-3x"></i>
+                  <div class="h2 my-3 font-weight-bold">Need Help?</div>
+                  <p class="invite-message">Our NTO experts are standing by and available to assist you. Start chatting with someone now or give us a call at (555) 212-3698.</p>
+               </div>
+               <div class="modal-footer justify-content-between">
+                  <button type="button" class="btn btn-outline-light reject-invite w-100" data-dismiss="modal" tabindex="-1">
+                  No Thanks
+                  </button>
+                  <button type="button" class="btn btn-primary accept-invite w-100" tabindex="-1">Let's Chat
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="./Sites-NTOSFRA-Site_files/esw.js"></script>
+      <script type="text/javascript">
+         var initESW = function (gslbBaseURL) {
+             embedded_svc.settings.displayHelpButton = false;
+             embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+             embedded_svc.settings.entryFeature = 'LiveAgent';
+             embedded_svc.settings.extraPrechatFormDetails = [
+                 { label: 'First Name', transcriptFields: ['First_Name__c'] },
+                 { label: 'Last Name', transcriptFields: ['Last_Name__c'] },
+                 { label: 'Email', transcriptFields: ['Email__c'] },
+                 { label: 'Subject', transcriptFields: ['Subject__c'] }
+             ];
+             embedded_svc.addEventHandler('featureLoaded', function (featureName) {
+                 if (featureName === 'Invite') {
+                     embedded_svc.inviteAPI.inviteButton.setCustomVariable('highValue', false);
+                 }
+             });
+         
+             embedded_svc.init(
+                 'https://ntoretailforce.my.salesforce.com',
+                 'https://sdo-demo-main-141e22218df-14-14662b7e3be.secure.force.com/Public',
+                 gslbBaseURL,
+                 '00Do0000000Hxle',
+                 'northerntrailoutfitters_com',
+                 {
+                     baseLiveAgentContentURL: 'https://c.la4-c4-ph2.salesforceliveagent.com/content',
+                     deploymentId: '5723m000000Tbpr',
+                     buttonId: '5733m000000TdLa',
+                     baseLiveAgentURL: 'https://d.la4-c4-ph2.salesforceliveagent.com/chat',
+                     eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I3m00000000UhEAI_16e65ef4093',
+                     isOfflineSupportEnabled: true
+                 }
+             );
+         };
+         
+         if (!window.embedded_svc) {
+             var s = document.createElement('script');
+             s.setAttribute('src', 'https://ntoretailforce.my.salesforce.com/embeddedservice/5.0/esw.js');
+             s.onload = function () {
+                 initESW(null);
+             };
+             document.body.appendChild(s);
+         } else {
+             initESW('https://service.force.com');
+         }
+         
+         document.querySelector('.close-invite').onclick = function () {
+             embedded_svc.inviteAPI.inviteButton.rejectInvite();
+         };
+         document.querySelector('.reject-invite').onclick = function () {
+             embedded_svc.inviteAPI.inviteButton.rejectInvite();
+         };
+         document.querySelector('.accept-invite').onclick = function () {
+             embedded_svc.inviteAPI.inviteButton.acceptInvite();
+         };
+         document.querySelector('.live-chat').onclick = function () {
+             document.querySelector('.embeddedServiceHelpButton .uiButton')
+                 .click();
+         };
+         document.addEventListener('keyup', function (event) {
+             if (event.keyCode == 27) {
+                 embedded_svc.inviteAPI.inviteButton.rejectInvite();
+             }
+         });
+      </script><script id="common-script" type="text/javascript" src="./Sites-NTOSFRA-Site_files/common.min.js"></script>
+      <!-- Google Tag Manager - cached -->
+      <script type="text/javascript">
+         function gtmEventLoader() {
+         };
+         if (document.readyState === 'complete') {
+         	gtmEventLoader();
+         } else {
+         	document.addEventListener('DOMContentLoaded', gtmEventLoader);
+         }
+      </script>
+      <!-- End Google Tag Manager - cached -->
+      <!-- Google Tag Manager - noncached -->
+      <script type="text/javascript">
+         try {
+             
+                 window.dataLayer.push({"userId":"abw2rKQm4y4DmhYCmvhuOG4qGd"});
+             
+         } catch (e) {
+             console.error(e);
+         }
+      </script>
+      <!-- End Google Tag Manager - noncached -->
+      <!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
+      <script type="text/javascript">//<!--
+         /* <![CDATA[ */
+         function trackPage() {
+             try{
+                 var trackingUrl = "https://d1xwwsagkcyxci.cloudfront.net/store/Sites-NTOSFRA-Site/en_US/__Analytics-Start";
+                 var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+                 if (typeof dw.ac == "undefined") {
+                     dwAnalytics.trackPageView();
+                 } else {
+                     dw.ac.setDWAnalytics(dwAnalytics);
+                 }
+             }catch(err) {};
+         }
+         /* ]]> */
+         // -->
+      </script>
+      <script type="text/javascript" src="./Sites-NTOSFRA-Site_files/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+      <!-- Demandware Active Data (body_end-active_data.js) -->
+      <script src="./Sites-NTOSFRA-Site_files/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+      <script src="./Sites-NTOSFRA-Site_files/gretel.min.js" type="text/javascript" async="async"></script>
+      <script id="liveagent-esw-script" type="text/javascript" src="./Sites-NTOSFRA-Site_files/liveagent.esw.min.js"></script>
+      <form id="fileUploadForm" enctype="multipart/form-data" method="post" target="fileUploadIframe"><input type="file" id="fileSelector" name="file" style="display: none;"><input name="filename" type="hidden"></form>
+      <iframe id="fileUploadIframe" name="fileUploadIframe" title="FileUploadFrame" style="display: none;" src="./Sites-NTOSFRA-Site_files/saved_resource.html"></iframe><span id="okta-plugin-message-channel-available" style="display: none;"></span><iframe id="esw_storage_iframe" src="./Sites-NTOSFRA-Site_files/esw.html" title="Live Chat Metadata" style="display: none;"></iframe><script type="text/javascript" src="./Sites-NTOSFRA-Site_files/EmbeddedServiceConfig.jsonp"></script><script id="invite-esw-script" type="text/javascript" src="./Sites-NTOSFRA-Site_files/invite.esw.min.js"></script>
+      <div class="embeddedServiceHelpButton" style="display: none;">
+         <div class="helpButton"><button class="helpButtonEnabled uiButton" href="javascript:void(0)"><span class="embeddedServiceIcon" aria-hidden="true" data-icon="" style="display: inline-block;"></span><span class="helpButtonLabel" id="helpButtonSpan" aria-live="polite" aria-atomic="true"><span class="assistiveText">Live chat:</span><span class="message">Chat with an Expert</span></span></button></div>
+      </div>
+      <script id="inert-script" type="text/javascript" src="./Sites-NTOSFRA-Site_files/inert.min.js"></script><script type="text/javascript" src="./Sites-NTOSFRA-Site_files/EmbeddedServiceConfig(1).jsonp"></script>
+      <div id="naptha_container0932014_0707"></div>
+   </body>
+   <rq-implicit-test-rule-widget class="rq-element" style="display: none;" draggable="true">
+      <template shadowrootmode="closed">
+         <style>:host {
+            position: fixed !important;
+            z-index: 2147483647 !important;
+            top: 16px;
+            right: 16px;
+            }
+            #container {
+            border-radius: 1rem;
+            padding: 12px 1rem;
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            font-family: system-ui;
+            background: #1a1a1a;
+            box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.16), 0px 16px 32px 0px rgba(0, 0, 0, 0.24);
+            border: 1px solid #5c5b5b;
+            cursor: move;
+            width: 420px;
+            transition: all 0.2s;
+            }
+            #container.minimized {
+            width: fit-content;
+            height: 56px;
+            padding: 6px;
+            border-radius: 20px;
+            }
+            #container.minimized #test-rule-container,
+            #container.minimized #heading-container,
+            #container.minimized #info-container {
+            display: none;
+            }
+            #rule-name {
+            font-size: 12px;
+            margin: 4px 0;
+            font-weight: bolder;
+            line-height: 1.4;
+            max-width: 290px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            }
+            #heading-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4px;
+            }
+            #logo-container {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            }
+            #heading-container div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            }
+            #actions-container {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            }
+            #actions-container button {
+            width: 32px;
+            height: 32px;
+            background: none;
+            border: none;
+            color: #fff;
+            transition: all 0.2s;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            }
+            #actions-container #close-button svg {
+            width: 10px;
+            height: 10px;
+            }
+            #actions-container button:hover {
+            background: #383838;
+            }
+            #explicit-widget-container {
+            background: #282828;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 8px;
+            }
+            #implicit-widget-container {
+            padding: 0 4px;
+            margin-top: 8px;
+            }
+            #rule-status-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            }
+            #test-rule-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4px;
+            }
+            #info-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 6px;
+            margin-top: 8px;
+            }
+            #info-icon {
+            align-self: flex-start;
+            }
+            #rule-status-comment {
+            align-self: center;
+            }
+            #heading-logo {
+            height: 16px;
+            width: 16px;
+            }
+            #logo-text {
+            color: #fff;
+            font-size: 11px;
+            font-weight: 500;
+            }
+            #view-result-btn {
+            all: unset;
+            background: #1e69ff;
+            color: #fff;
+            border-radius: 4px;
+            padding: 4px 12px;
+            font-size: 12px;
+            }
+            #view-result-btn:hover {
+            cursor: pointer;
+            border-color: #0f4cd9;
+            background: #0f4cd9;
+            }
+            #rule-status {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 4px;
+            }
+            #rule-applied-status,
+            #rule-not-applied-status {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            letter-spacing: 1px;
+            font-size: 10px;
+            font-weight: 500;
+            margin-top: -3px;
+            }
+            #rule-applied-status {
+            color: #28c07a;
+            }
+            #rule-not-applied-status {
+            color: #e09400;
+            }
+            #minimized-details {
+            display: none;
+            pointer-events: none;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 3px;
+            }
+            #minimized-details.visible {
+            display: flex;
+            pointer-events: auto;
+            }
+            #minimized-logo svg {
+            height: 16px;
+            width: 16px;
+            }
+            #test-rule-minimized-btn {
+            padding: 0;
+            background: transparent;
+            border: none;
+            }
+            #test-rule-minimized-btn span {
+            padding: 6px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            }
+            #test-rule-minimized-btn span svg {
+            height: 20px;
+            width: 20px;
+            }
+            .secondary-text {
+            font-size: 11px;
+            color: #b0b0b5b3;
+            }
+            .hidden {
+            display: none !important;
+            }
+            a {
+            color: #9370db;
+            }
+            .warning {
+            background: #5c3111;
+            }
+            .success {
+            background: #104b2f;
+            }
+            #applied-rules-list {
+            margin-top: 8px;
+            max-height: 200px;
+            overflow-y: auto;
+            padding-right: 4px;
+            }
+            #applied-rules-list::-webkit-scrollbar {
+            width: 8px;
+            background: transparent;
+            }
+            #applied-rules-list::-webkit-scrollbar-thumb {
+            background: #353535;
+            border-radius: 8px;
+            }
+            #applied-rules-list-header {
+            font-size: 13px;
+            color: #fff;
+            font-weight: 500;
+            }
+            .applied-rule-list-item {
+            border-radius: 8px;
+            background: #282828;
+            padding: 12px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            margin-top: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            }
+            .applied-rule-list-item:hover {
+            background: #383838;
+            }
+            .applied-rule-list-item:hover .applied-rule-arrow-icon {
+            opacity: 1;
+            }
+            .applied-rule-list-item:first-child {
+            margin-top: 0;
+            }
+            .applied-rule-item-details {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            }
+            .applied-rule-icon {
+            align-self: center;
+            }
+            .applied-rule-icon svg {
+            width: 14px;
+            height: 14px;
+            position: relative;
+            top: 2px;
+            }
+            .applied-rule-arrow-icon {
+            transform: scale(1.2);
+            align-self: center;
+            transition: 0.2s all;
+            opacity: 0;
+            }
+            .applied-rule-name {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            }
+            #settings-button {
+            position: relative;
+            }
+            #settings-button[data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            z-index: 1;
+            right: 0px;
+            top: 34px;
+            width: 158px;
+            max-width: 232px;
+            padding: 6px 12px;
+            color: #fff;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            border-radius: 4px;
+            background: #000;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.16);
+            }
+         </style>
+         <div id="container">
+            <div id="minimized-details">
+               <div id="minimized-logo">
+                  <svg width="251" height="251" viewBox="0 0 251 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M124.408 245.868V188.238C104.504 188.529 82.7544 186.943 60.1611 182.339L60.0545 182.235V216.575C60.0545 223.437 60.7942 228.978 62.2736 233.201C63.7529 237.423 65.8487 240.722 68.5609 243.097C71.5197 245.472 75.0949 247.055 79.2864 247.847C83.7246 248.903 88.7791 249.43 94.4501 249.43C100.121 249.43 105.792 249.035 111.463 248.243C117.381 247.451 121.695 246.66 124.408 245.868Z" fill="white"></path>
+                     <path d="M124.408 169.866H127.147C152.451 169.356 180.05 165.599 203.571 154.848L203.554 154.824C214.403 148.49 223.773 139.518 231.663 127.906C239.553 116.295 243.498 102.308 243.498 85.9467C243.498 59.821 234.868 39.1052 217.609 23.7992C200.349 8.4932 174.707 0.84021 140.681 0.84021C128.106 0.84021 116.271 1.6319 105.176 3.21527C94.0803 4.53475 84.341 6.77789 75.9578 9.94465C71.0266 11.7919 67.0816 14.2989 64.1228 17.4657C61.4106 20.3685 60.0545 24.5909 60.0545 30.1327V96.5095C71.3817 98.242 114.382 101.954 124.038 101.543V57.8418C126.75 57.314 129.216 56.9182 131.435 56.6543C133.654 56.3904 136.612 56.2584 140.311 56.2584C153.379 56.2584 162.871 58.8974 168.789 64.1753C174.953 69.1893 178.035 76.7103 178.035 86.7384C178.035 96.7664 175.323 104.419 169.899 109.697C164.474 114.711 157.077 117.218 147.708 117.218H124.038V117.008C123.974 117.109 123.915 117.21 123.861 117.313C87.9797 115.588 66.1922 114.066 60.0404 113.204L60.0399 113.194L42.9936 111.502C41.4373 111.348 40.2998 109.961 40.4529 108.404L41.3754 99.0229C41.6423 96.3086 38.2948 94.8199 36.4615 96.8375L0.888601 135.986C-0.0859492 137.058 -0.0924867 138.694 0.873451 139.776L29.4492 171.786C31.0921 173.627 34.1369 172.635 34.3782 170.181L35.0406 163.445C35.2015 161.809 36.7162 160.655 38.336 160.934L60.0545 164.671V164.802L60.1611 164.695C73.4489 166.933 97.4782 170.207 124.408 169.908V169.866Z" fill="white"></path>
+                     <path d="M175.076 223.305L153.644 186.439C181.486 183.412 203.494 177.208 215.783 172.246C220.496 178.807 225.172 185.139 229.813 191.241C238.443 202.589 245.224 212.881 250.155 222.117C247.689 231.354 243.128 238.479 236.471 243.493C230.06 248.243 222.786 250.618 214.65 250.618C209.225 250.618 204.541 249.958 200.596 248.639C196.651 247.319 193.199 245.472 190.24 243.097C187.281 240.722 184.569 237.819 182.103 234.388C179.638 230.958 177.295 227.263 175.076 223.305Z" fill="white"></path>
+                  </svg>
+               </div>
+               <button id="test-rule-minimized-btn">
+                  <span class="success">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_2834_1705" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                           <rect width="16" height="16" fill="#D9D9D9"></rect>
+                        </mask>
+                        <g mask="url(#mask0_2834_1705)">
+                           <path d="M7.13333 10.4833L11.1667 6.46667L10.2 5.5L7.13333 8.56667L5.76667 7.2L4.81667 8.16667L7.13333 10.4833ZM8 14.5333C7.1 14.5333 6.25 14.3667 5.45 14.0333C4.66111 13.6889 3.96667 13.2222 3.36667 12.6333C2.77778 12.0333 2.31111 11.3389 1.96667 10.55C1.63333 9.75 1.46667 8.9 1.46667 8C1.46667 7.08889 1.63333 6.23889 1.96667 5.45C2.31111 4.66111 2.77778 3.97222 3.36667 3.38333C3.96667 2.78333 4.66111 2.31667 5.45 1.98333C6.25 1.63889 7.1 1.46667 8 1.46667C8.91111 1.46667 9.76111 1.63889 10.55 1.98333C11.3389 2.31667 12.0278 2.78333 12.6167 3.38333C13.2167 3.97222 13.6833 4.66111 14.0167 5.45C14.3611 6.23889 14.5333 7.08889 14.5333 8C14.5333 8.9 14.3611 9.75 14.0167 10.55C13.6833 11.3389 13.2167 12.0333 12.6167 12.6333C12.0278 13.2222 11.3389 13.6889 10.55 14.0333C9.76111 14.3667 8.91111 14.5333 8 14.5333ZM8 13.15C9.43333 13.15 10.65 12.65 11.65 11.65C12.65 10.65 13.15 9.43333 13.15 8C13.15 6.56667 12.65 5.35 11.65 4.35C10.65 3.35 9.43333 2.85 8 2.85C6.56667 2.85 5.35 3.35 4.35 4.35C3.35 5.35 2.85 6.56667 2.85 8C2.85 9.43333 3.35 10.65 4.35 11.65C5.35 12.65 6.56667 13.15 8 13.15Z" fill="#28C07A"></path>
+                        </g>
+                     </svg>
+                  </span>
+               </button>
+            </div>
+            <div id="heading-container">
+               <div id="logo-container">
+                  <span id="heading-logo">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.98439 15.6591V11.9822C6.71565 12.0008 5.32921 11.8996 3.88899 11.6058L3.8822 11.5992V13.7902C3.8822 14.2279 3.92935 14.5815 4.02366 14.8509C4.11796 15.1203 4.25156 15.3307 4.42445 15.4823C4.61305 15.6338 4.84095 15.7348 5.10814 15.7853C5.39105 15.8527 5.71325 15.8864 6.07475 15.8864C6.43625 15.8864 6.79774 15.8611 7.15924 15.8106C7.53645 15.7601 7.8115 15.7096 7.98439 15.6591Z" fill="url(#paint0_linear_2826_2722)"></path>
+                        <path d="M7.98439 10.81H8.15909C9.77207 10.7775 11.5313 10.5378 13.0307 9.85185L13.0296 9.85029C13.7212 9.4462 14.3184 8.87374 14.8214 8.13291C15.3243 7.39208 15.5758 6.49972 15.5758 5.45582C15.5758 3.78896 15.0257 2.46725 13.9255 1.4907C12.8253 0.514153 11.1907 0.0258789 9.02172 0.0258789C8.22015 0.0258789 7.46572 0.0763902 6.75845 0.177412C6.05117 0.261597 5.43035 0.404713 4.89596 0.606758C4.58162 0.724617 4.33014 0.884567 4.14154 1.08661C3.96865 1.27182 3.8822 1.54121 3.8822 1.89479V6.12974C4.60426 6.24028 7.34528 6.47711 7.96081 6.45089V3.66268C8.1337 3.629 8.29087 3.60375 8.43233 3.58691C8.57378 3.57008 8.76239 3.56166 8.99815 3.56166C9.83116 3.56166 10.4363 3.73003 10.8135 4.06677C11.2064 4.38667 11.4029 4.86653 11.4029 5.50633C11.4029 6.14614 11.23 6.63442 10.8842 6.97116C10.5384 7.29106 10.0669 7.45101 9.46966 7.45101H7.96081V7.43758C7.95673 7.44399 7.95296 7.45048 7.94952 7.45705C5.66229 7.347 4.27345 7.24991 3.8813 7.19488L3.88127 7.19426L2.79467 7.08629C2.69546 7.07644 2.62295 6.98802 2.63269 6.88881L2.69152 6.29001C2.70853 6.11695 2.49506 6.02204 2.37823 6.15072L0.11053 8.64856C0.0484818 8.71691 0.0480731 8.82113 0.109583 8.89009L1.93123 10.9325C2.03594 11.0499 2.2301 10.9867 2.24547 10.8302L2.28772 10.4002C2.29797 10.2959 2.39452 10.2223 2.49778 10.2401L3.8822 10.4785V10.4869L3.88899 10.4801C4.73603 10.6229 6.26777 10.8318 7.98439 10.8127V10.81Z" fill="url(#paint1_linear_2826_2722)"></path>
+                        <path d="M11.2143 14.2195L9.8481 11.8674C11.6229 11.6743 13.0258 11.2785 13.8091 10.9619C14.1095 11.3805 14.4076 11.7844 14.7035 12.1738C15.2536 12.8978 15.6858 13.5544 16.0002 14.1437C15.843 14.733 15.5522 15.1876 15.1279 15.5075C14.7192 15.8106 14.2556 15.9621 13.7369 15.9621C13.3911 15.9621 13.0925 15.92 12.841 15.8359C12.5895 15.7517 12.3695 15.6338 12.1809 15.4823C11.9923 15.3307 11.8194 15.1455 11.6622 14.9267C11.505 14.7078 11.3557 14.4721 11.2143 14.2195Z" fill="url(#paint2_linear_2826_2722)"></path>
+                        <path d="M0.0637207 8.77344C0.0645556 8.81521 0.0798203 8.85677 0.109546 8.8901L1.93119 10.9325C2.03591 11.0499 2.23006 10.9867 2.24543 10.8302L2.28769 10.4002C2.29793 10.2959 2.39449 10.2223 2.49774 10.2401L3.88216 10.4785V10.4869L3.88896 10.4801C4.73599 10.6229 6.26774 10.8318 7.98435 10.8127V10.81H8.01892V9.21903L0.0637207 8.77344Z" fill="url(#paint3_linear_2826_2722)"></path>
+                        <path d="M8.01896 9.21922L0.0637569 8.77363C0.0628642 8.72897 0.0784679 8.68408 0.11053 8.64876L2.37823 6.15092C2.49506 6.02224 2.70853 6.11715 2.69152 6.29021L2.63269 6.88901C2.62295 6.98822 2.69546 7.07664 2.79467 7.08649L3.88127 7.19446L3.8813 7.19508C4.27345 7.2501 5.66229 7.3472 7.94952 7.45725C7.95296 7.45068 7.95673 7.44419 7.96081 7.43778V7.45121H8.01896V9.21922Z" fill="url(#paint4_linear_2826_2722)"></path>
+                        <defs>
+                           <lineargradient id="paint0_linear_2826_2722" x1="3.76992" y1="-1.50587" x2="13.212" y2="19.2702" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#1EA0FF"></stop>
+                              <stop offset="1" stop-color="#004EEB"></stop>
+                           </lineargradient>
+                           <lineargradient id="paint1_linear_2826_2722" x1="3.76992" y1="-1.50587" x2="13.212" y2="19.2702" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#1EA0FF"></stop>
+                              <stop offset="1" stop-color="#004EEB"></stop>
+                           </lineargradient>
+                           <lineargradient id="paint2_linear_2826_2722" x1="3.76992" y1="-1.50587" x2="13.212" y2="19.2702" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#1EA0FF"></stop>
+                              <stop offset="1" stop-color="#004EEB"></stop>
+                           </lineargradient>
+                           <lineargradient id="paint3_linear_2826_2722" x1="11.8972" y1="9.83355" x2="5.27078" y2="8.10349" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#1EA0FF"></stop>
+                              <stop offset="1" stop-color="#004EEB"></stop>
+                           </lineargradient>
+                           <lineargradient id="paint4_linear_2826_2722" x1="2.63345" y1="4.98671" x2="14.7158" y2="6.53243" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#1EA0FF"></stop>
+                              <stop offset="1" stop-color="#004EEB"></stop>
+                           </lineargradient>
+                        </defs>
+                     </svg>
+                  </span>
+                  <span id="logo-text">requestly</span>
+               </div>
+               <div id="actions-container">
+                  <button id="settings-button" class="" data-tooltip="Hide widget in app settings">
+                     <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.6167 6.91667L9.58333 5.88333C9.62778 5.46111 9.5 5.1 9.2 4.8C8.9 4.48889 8.53889 4.35556 8.11667 4.4L7.08333 3.36667C7.22778 3.31111 7.37778 3.27222 7.53333 3.25C7.68889 3.21667 7.84444 3.2 8 3.2C8.77778 3.2 9.43889 3.47222 9.98333 4.01667C10.5278 4.56111 10.8 5.22222 10.8 6C10.8 6.15556 10.7833 6.31111 10.75 6.46667C10.7278 6.62222 10.6833 6.77222 10.6167 6.91667ZM12.8333 9.13333L11.9667 8.26667C12.3667 7.95556 12.7278 7.61667 13.05 7.25C13.3833 6.87222 13.6611 6.45556 13.8833 6C13.3389 4.87778 12.5333 4 11.4667 3.36667C10.4111 2.72222 9.25556 2.4 8 2.4C7.71111 2.4 7.42778 2.41667 7.15 2.45C6.87222 2.48333 6.6 2.53889 6.33333 2.61667L5.36667 1.65C5.78889 1.48333 6.21667 1.36667 6.65 1.3C7.09444 1.23333 7.54444 1.2 8 1.2C9.58889 1.2 11.0389 1.63333 12.35 2.5C13.6722 3.35556 14.6222 4.52222 15.2 6C14.9556 6.63333 14.6278 7.21111 14.2167 7.73333C13.8167 8.24444 13.3556 8.71111 12.8333 9.13333ZM12.8 12.5L10.6333 10.3333C10.2111 10.4889 9.77778 10.6056 9.33333 10.6833C8.9 10.7611 8.45556 10.8 8 10.8C6.41111 10.8 4.95556 10.3722 3.63333 9.51667C2.32222 8.65 1.37778 7.47778 0.800001 6C1.04444 5.36667 1.36667 4.78889 1.76667 4.26667C2.16667 3.74444 2.63333 3.27222 3.16667 2.85L1.5 1.18333L2.35 0.333334L13.65 11.65L12.8 12.5ZM4.01667 3.71667C3.62778 4.02778 3.26667 4.37222 2.93333 4.75C2.6 5.11667 2.32778 5.53333 2.11667 6C2.66111 7.12222 3.46111 8.00556 4.51667 8.65C5.58333 9.28333 6.74444 9.6 8 9.6C8.28889 9.6 8.57222 9.58333 8.85 9.55C9.12778 9.50556 9.40556 9.45 9.68333 9.38333L8.93333 8.63333C8.77778 8.68889 8.62222 8.73333 8.46667 8.76667C8.31111 8.78889 8.15556 8.8 8 8.8C7.22222 8.8 6.56111 8.52778 6.01667 7.98333C5.47222 7.43889 5.2 6.77778 5.2 6C5.2 5.84444 5.21667 5.68889 5.25 5.53333C5.29445 5.37778 5.33333 5.22222 5.36667 5.06667L4.01667 3.71667Z" fill="white"></path>
+                     </svg>
+                  </button>
+                  <button id="minimize-button" class="hidden">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_2826_2732" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                           <rect width="16" height="16" fill="#D9D9D9"></rect>
+                        </mask>
+                        <g mask="url(#mask0_2826_2732)">
+                           <path d="M6.27083 4.75L8.5 6.95833V5.27083H10V9.5H5.75V8H7.4375L5.22917 5.79167L6.27083 4.75ZM13.75 14C13.125 14 12.5903 13.7847 12.1458 13.3542C11.7153 12.9097 11.5 12.375 11.5 11.75C11.5 11.125 11.7153 10.5972 12.1458 10.1667C12.5903 9.72222 13.125 9.5 13.75 9.5C14.375 9.5 14.9028 9.72222 15.3333 10.1667C15.7778 10.5972 16 11.125 16 11.75C16 12.375 15.7778 12.9097 15.3333 13.3542C14.9028 13.7847 14.375 14 13.75 14ZM1.5 14C1.08333 14 0.729167 13.8542 0.4375 13.5625C0.145833 13.2708 1.78814e-07 12.9167 1.78814e-07 12.5V3.5C1.78814e-07 3.08333 0.145833 2.72917 0.4375 2.4375C0.729167 2.14583 1.08333 2 1.5 2H14.5C14.9167 2 15.2708 2.14583 15.5625 2.4375C15.8542 2.72917 16 3.08333 16 3.5V8H14.5V3.5H1.5V12.5H10V14H1.5Z" fill="white"></path>
+                        </g>
+                     </svg>
+                  </button>
+                  <button id="close-button" class="">
+                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.167368 0.167368C0.390524 -0.0557892 0.752333 -0.0557892 0.97549 0.167368L4 3.19188L7.02451 0.167368C7.24767 -0.0557892 7.60948 -0.0557892 7.83263 0.167368C8.05579 0.390524 8.05579 0.752333 7.83263 0.97549L4.80812 4L7.83263 7.02451C8.05579 7.24767 8.05579 7.60948 7.83263 7.83263C7.60948 8.05579 7.24767 8.05579 7.02451 7.83263L4 4.80812L0.97549 7.83263C0.752333 8.05579 0.390524 8.05579 0.167368 7.83263C-0.0557892 7.60948 -0.0557892 7.24767 0.167368 7.02451L3.19188 4L0.167368 0.97549C-0.0557892 0.752333 -0.0557892 0.390524 0.167368 0.167368Z" fill="#E3E3E3"></path>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+            <div id="test-rule-container">
+               <div id="implicit-widget-container">
+                  <div id="applied-rules-list-header">Rules applied on this page</div>
+                  <div id="applied-rules-list"></div>
+               </div>
+            </div>
+            <div id="info-container" class="hidden">
+               <div id="info-icon" class="secondary-text">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none">
+                     <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 7H13V9H11V7ZM11 11H13V17H11V11Z" fill="currentColor"></path>
+                  </svg>
+               </div>
+               <div id="info-text" class="secondary-text"></div>
+            </div>
+         </div>
+      </template>
+   </rq-implicit-test-rule-widget>
+   <copyleaks-sidebar-popup id="copyleaks-sidebar-popup-container" class="no-print">
+      <template shadowrootmode="open"><img id="text-selection-icon" src="chrome-extension://gplcmncpklkdjiccbknjjkoidpgkcakd/assets/icons/cl-logo.svg" style="width: 38px; z-index: 99999999; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.41) 0px 0px 2px; cursor: pointer; display: none;"></template>
+   </copyleaks-sidebar-popup>
+   
+    <script>
+        let cartProducts = cartLS.list();
+        let storedCartProducts = JSON.parse(localStorage.getItem('cartProducts'));
+
+        console.log('cartProducts: ' , cartProducts);
+        console.log('storedCartProducts: ' , storedCartProducts);
+
+        init();
+
+        function init() {
+         loadOrderProductSummary();
+        }
+
+
+        function generateUUID() {
+            return 'xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+               const r = Math.random() * 16 | 0,
+                        v = c === 'x' ? r : (r & 0x3 | 0x8);
+               return v.toString(16);
+            });
+         }
+
+        function loadOrderProductSummary(){ 
+            $('.order-product-summary').empty();
+            storedCartProducts = JSON.parse(localStorage.getItem('cartProducts'));
+            cartProducts = cartLS.list();
+
+            cartProducts.forEach(product => {
+               console.log('Product html ' , product)
+               let productLS = storedCartProducts.find(p => p.id === product.id)
+               const uuid = generateUUID(); // Use your own UUID generator or a fixed UUID if needed
+               let orderSummaryHtml = `<div class="card-body">
+                                       <div class="product-summary-block">
+                                          <div class="product-line-item" data-product-line-item="b67d6d287f8d8870dc5360a780">
+                                             <div class="d-flex flex-row">
+                                                <div class="item-image">
+                                                   <a href="../en_US/${product.name}.html">
+                                                   <img class="product-image" src="${product.image}" alt="${product.name}" title="${product.name}">
+                                                   </a>
+                                                </div>
+                                                <div class="product-line-item-details flex-grow-1">
+                                                   <div class="line-item-header">
+                                                      <div class="line-item-name">
+                                                         <span>${product.name}</span>
+                                                      </div>
+                                                   </div>
+                                                   <div class="item-attributes">
+                                                      <div class="line-item-attributes">
+                                                         <span class="attribute-label">
+                                                         Color:
+                                                         </span>
+                                                         <span class="attribute-value">
+                                                         Everglade
+                                                         </span>
+                                                      </div>
+                                                      <div class="line-item-attributes">
+                                                         <span class="attribute-label">
+                                                         Size:
+                                                         </span>
+                                                         <span class="attribute-value">
+                                                         S
+                                                         </span>
+                                                      </div>
+                                                      <div class="item-options">
+                                                      </div>
+                                                      <div class="line-item-quanity-info quantity" data-uuid="b67d6d287f8d8870dc5360a780" data-pid="${product.id}">
+                                                         <span class="qty-card-quantity-label">
+                                                         Quantity
+                                                         </span>:
+                                                         <span class="qty-card-quantity-count">
+                                                         ${product.quantity}
+                                                         </span>
+                                                      </div>
+                                                      <div class="line-item-total-price justify-content-end">
+                                                         <div class="item-total-b67d6d287f8d8870dc5360a780 price">
+                                                            <div class="d-flex justify-content-end">
+                                                               <div class="strike-through non-adjusted-price">
+                                                                  null
+                                                               </div>
+                                                               <div class="pricing line-item-total-price-amount item-total-b67d6d287f8d8870dc5360a780">
+                                                                  $${product.price}
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>`;
+
+               $('.order-product-summary').append(orderSummaryHtml);
+            });
+
+        }
+    </script>
+</html>
