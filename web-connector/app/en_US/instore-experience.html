@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!--[if gt IE 9]><!-->
+<script>//common/scripts.isml</script>
+<script defer type="text/javascript" src="../static/js/main.js"></script>
+<!--<![endif]-->
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        Sites-NTOSFRA-Site
+    </title>
+	<link rel="canonical" href="http://www.northerntrailoutfitters.com/en_US/instore-experience.html" />
+<meta name="description" content="Commerce Cloud Storefront Reference Architecture" />
+<meta name="keywords" content="Commerce Cloud Storefront Reference Architecture" />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="apple-touch-icon" sizes="57x57" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw6bb6183a/images/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw79424491/images/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dwb40c1bcb/images/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw493b4173/images/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw88bb053d/images/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dwc6b3220f/images/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dwf90cc5d1/images/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw78174e22/images/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dwe720ba3c/images/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"
+    href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw6e83b59a/images/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw9fca7f0d/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw454646ca/images/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://d1xwwsagkcyxci.cloudfront.net/static/Sites-NTOSFRA-Site/-/default/dw2a024a9a/images/favicons/favicon-16x16.png">
+<link rel="stylesheet" href="../static/css/global.css" />
+<script data-cfasync="false" type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+</script>
+
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _analytics_enabled: "true",
+    _timeZone: "US/Pacific",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    },
+    eventsIsEmpty: function() {
+        return 0 == dw.ac._events.length;
+    }
+};
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bbms-NTO_NA';
+CQuotient.realm = 'BDPX';
+CQuotient.siteId = 'NTOSFRA';
+CQuotient.instanceType = 'prd';
+CQuotient.locale = 'en_US';
+CQuotient.fbPixelId = '__UNKNOWN__';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.cqeid='';
+CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
+/* Turn this on to test against Staging Einstein */
+/* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  var value = c.substring('cquid='.length,c.length);
+		  if (value) {
+		  	var split_value = value.split("|", 3);
+		  	if (split_value.length > 0) {
+			  CQuotient.cquid=split_value[0];
+		  	}
+		  	if (split_value.length > 1) {
+			  CQuotient.cqeid=split_value[1];
+		  	}
+		  	if (split_value.length > 2) {
+			  CQuotient.cqlid=split_value[2];
+		  	}
+		  }
+	  }
+	}
+}
+CQuotient.getCQCookieId = function () {
+	if(window.CQuotient.cqcid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqcid;
+};
+CQuotient.getCQUserId = function () {
+	if(window.CQuotient.cquid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cquid;
+};
+CQuotient.getCQHashedEmail = function () {
+	if(window.CQuotient.cqeid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqeid;
+};
+CQuotient.getCQHashedLogin = function () {
+	if(window.CQuotient.cqlid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqlid;
+};
+CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+try {
+	if (Object.prototype.toString.call(events) === "[object Array]") {
+		events.forEach(_trackASingleCQEvent);
+	} else {
+		CQuotient._trackASingleCQEvent(events);
+	}
+} catch(err) {}
+};
+CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+	if (event && event.id) {
+		if (event.type === dw.ac.EV_PRD_DETAIL) {
+			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+		} // not handling the other dw.ac.* events currently
+	}
+};
+CQuotient.trackViewProduct = function(/* Object */ cqParamData){
+	var cq_params = {};
+	cq_params.cookieId = CQuotient.getCQCookieId();
+	cq_params.userId = CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.product = cqParamData.product;
+	cq_params.realm = cqParamData.realm;
+	cq_params.siteId = cqParamData.siteId;
+	cq_params.instanceType = cqParamData.instanceType;
+	cq_params.locale = CQuotient.locale;
+	if(CQuotient.sendActivity) {
+		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+	} else {
+		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+	}
+};
+/* ]]> */
+// -->
+</script>
+<link rel="stylesheet" href="../bootstrap/4.3.1/css/bootstrap.min.css"
+>
+<style>
+@font-face {
+font-family: "Salesforce Sans";
+src: url("../static/webfonts/SalesforceSans-Regular.woff") format("woff"),
+url("../static/webfonts/SalesforceSans-Regular.ttf") format("truetype");
+}
+html,
+body {
+height: 100%;
+width: 100%;
+overflow: hidden;
+}
+body {
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+background-image: url("../images/nto/nto-store.jpg");
+}
+.iphone-screen {
+cursor: pointer;
+height: 450px;
+left: 5%;
+position: absolute;
+top: 25%;
+width: auto;
+}
+.beacon {
+background-image: url("../images/nto/beacon.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+cursor: pointer;
+position: absolute;
+width: auto;
+}
+.beacon.clicked {
+animation: pulse 0.5s 1;
+}
+.shoes {
+height: 30px;
+left: 43%;
+top: 40%;
+width: 30px;
+}
+.register {
+background-image: url("../images/nto/checkout-beacon.png");
+height: 40px;
+left: 66%;
+top: 46%;
+width: 40px;
+}
+.mens {
+height: 50px;
+left: 36%;
+top: 50%;
+width: 50px;
+}
+.entrance {
+height: 60px;
+left: 60%;
+top: 75%;
+width: 60px;
+}
+.hide {
+display: none;
+}
+@keyframes pulse {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(0.9);
+}
+100% {
+transform: scale(1);
+}
+}
+.viewport {
+position: relative;
+}
+.canvas {
+position: absolute;
+}
+</style>
+</head>
+<body>
+<img src="../images/nto/screen-1.png" class="iphone-screen screen-1" />
+<img src="../images/nto/screen-2.png" class="iphone-screen screen-2 hide" />
+<img src="../images/nto/screen-3.png" class="iphone-screen screen-3 hide" />
+<img src="../images/nto/screen-4.png" class="iphone-screen screen-4 hide" />
+<img src="../images/nto/screen-5.png" class="iphone-screen screen-5 hide" />
+<div class="beacon shoes" data-draggable="false" data-toggle="tooltip" data-placement="right"
+title="Footwear"></div>
+<div class="beacon register" data-draggable="false" data-toggle="tooltip" data-placement="right"
+title="Checkout"></div>
+<div class="beacon mens" data-draggable="false" data-toggle="tooltip" data-placement="right"
+title="Camping"></div>
+<div class="beacon entrance" data-draggable="false" data-toggle="tooltip" data-placement="right"
+title="Entrance"></div>
+<script src="../ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="../bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script>
+(() => {
+$('[data-toggle="tooltip"]').tooltip();
+$('.beacon').on('click', (e) => {
+$(e.target).addClass('clicked');
+setTimeout(() => {
+$(e.target).removeClass('clicked');
+}, 600);
+const location = $(e.target).data('location');
+if (location === 'footwear') {
+$('.screen-1').addClass('hide');
+$('.screen-2').removeClass('hide');
+$('.screen-3').addClass('hide');
+$('.screen-4').addClass('hide');
+$('.screen-5').addClass('hide');
+}
+const properties = [{"name" : "storeID", "value" : "1292983"}];
+// send the interaction
+});
+$('.screen-2').on('click', (e) => {
+$('.screen-1').addClass('hide');
+$('.screen-2').addClass('hide');
+$('.screen-3').removeClass('hide');
+$('.screen-4').addClass('hide');
+$('.screen-5').addClass('hide');
+});
+$('.screen-3').on('click', (e) => {
+$('.screen-1').addClass('hide');
+$('.screen-2').addClass('hide');
+$('.screen-3').addClass('hide');
+$('.screen-4').removeClass('hide');
+$('.screen-5').addClass('hide');
+});
+$('.screen-4').on('click', (e) => {
+$('.screen-1').addClass('hide');
+$('.screen-2').addClass('hide');
+$('.screen-3').addClass('hide');
+$('.screen-4').addClass('hide');
+$('.screen-5').removeClass('hide');
+});
+$('.screen-5').on('click', (e) => {
+$('.screen-1').removeClass('hide');
+$('.screen-2').addClass('hide');
+$('.screen-3').addClass('hide');
+$('.screen-4').addClass('hide');
+$('.screen-5').addClass('hide');
+});
+})();
+</script>
+<!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+function trackPage() {
+    try{
+        var trackingUrl = "https://www.northerntrailoutfitters.com/on/demandware.store/Sites-NTOSFRA-Site/en_US/__Analytics-Start";
+        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+        if (typeof dw.ac == "undefined") {
+            dwAnalytics.trackPageView();
+        } else {
+            dw.ac.setDWAnalytics(dwAnalytics);
+        }
+    }catch(err) {};
+}
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="../static/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<!-- Demandware Active Data (body_end-active_data.js) -->
+<script src="../static/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="../js/gretel.min.js" type="text/javascript" async="async"></script>
+</body>
+</html>
