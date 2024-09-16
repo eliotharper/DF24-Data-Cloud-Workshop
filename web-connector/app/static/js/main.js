@@ -59,6 +59,15 @@ function init() {
         }
     });
 
+    // repoint all image sources
+    $('img').each(function() {
+        var imgSrc = $(this).attr('src');
+        if (imgSrc.includes('/on/demandware.static/-/Sites-nto-apparel/default/')) {
+            var updatedSrc = 'https://' + cfProxy + imgSrc.replaceAll('../on', '/on');
+            $(this).attr('src', updatedSrc);
+        }
+    });
+
     // report all /Product-Variation to cloudflare proxy in data-url
     $('*[data-url]').each(function(){
         var url = $(this).attr('data-url');
