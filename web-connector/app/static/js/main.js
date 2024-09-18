@@ -44,7 +44,7 @@
 
 
 let currentPage = window.location.pathname;
-let cfProxy = 'ntoproxy.mathes-btech.workers.dev'; // update
+let cfProxy = 'nto-proxy.eliot.workers.dev';
 let productColor, productImage, productSize, productUrl ;
 
 function init() {
