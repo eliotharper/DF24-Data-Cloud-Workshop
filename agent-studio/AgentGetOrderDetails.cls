@@ -4,7 +4,8 @@ public with sharing class AgentGetOrderDetails {
         if (!String.isBlank(orderNumber[0])) {
             
         // Construct the API endpoint
-        String endpoint = 'https://<your mock api endpoint goes here>.mockapi.io/api/v1/trackings/' + orderNumber[0];
+        // TOOD: replace the endpoint URL with your own mockapi or other api URL
+        String endpoint = 'https://66b60bc5b5ae2d11eb65b38f.mockapi.io/api/v1/trackings/' + orderNumber[0];
         
         // Initialize an HTTP request
         HttpRequest req = new HttpRequest();
