@@ -12,6 +12,6 @@ To view the website, open web-connector/app/en_US and select any page. Navigate 
 Use the URL below to load the SDK which will be explained during the session.
 
 ````
-
+https://cdn.c360a.salesforce.com/beacon/c360a/cd2955f2-fc5e-4fa8-a76e-6989c641dfb0/scripts/c360a.min.js
 ````
 
